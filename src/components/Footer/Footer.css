@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #a8c2ff;
+   bottom: 0px;
+}
+.footer_item{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 25px;
+}
+.footer_items{
+    text-align: center;
+}
