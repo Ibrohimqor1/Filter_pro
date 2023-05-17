@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from "react-router-dom";
 
-import { ContextProvider } from "../src/components/Contex";
+import { ContextProvider } from "../Contex";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

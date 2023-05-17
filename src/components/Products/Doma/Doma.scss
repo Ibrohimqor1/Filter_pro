@@ -7,8 +7,12 @@
     padding: 10px;
     height: 40px;
     border-radius: 20px;
-    border: 2px solid rgb(33, 4, 222);
+    border: 2px solid rgb(93, 15, 238);
   }
+  }
+
+  .prices__1{
+    border: none;
   }
   
   .maped {
@@ -54,29 +58,21 @@
           }
           .prices__2 {
             padding-top: 5px;
-            color: red;
+            color: rgb(66, 1, 244);
             font-weight: 600;
             font-size: 14px;
             text-decoration: line-through;
           }
         }
         .price__btn {
-          width: 200px;
+          width: 220px;
           border: none;
-          background-color: rgb(54, 5, 181);
+          background-color: rgb(10, 6, 237);
           color: white;
           border-radius: 8px;
-          height: 25px;
         }
-      
       }
     }
-  }
-
-  .prices{
-    margin-bottom: 10px;
-    align-items: center;
-    text-decoration: none;
   }
   @media only screen and (max-width: 1400px) {
       .maped {
@@ -408,7 +404,7 @@
             width: 100%;
             display: flex;
             border-radius: 10px;
-            height: 160px;
+            height: 180px;
             margin-top: 20px;
             .cardPlants__img {
               padding-top: 10px;
@@ -418,6 +414,11 @@
               border-bottom-left-radius: 10px;
               background-color: rgb(241, 235, 235);
             }
+            .cardPlants h1{
+font-size: 15px;
+
+            }
+            
             .ggg {
               padding: 10px;
               .cardPlants__h1 {
@@ -432,7 +433,7 @@
               }
               .prices {
                 display: flex;
-                gap: 50px;
+                gap: 25px;
                 .prices__1 {
                   font-size: 13px;
                   color: rgb(0, 0, 0);
@@ -442,12 +443,12 @@
                   padding-top: 5px;
                   color: red;
                   font-weight: 600;
-                  font-size: 11px;
+                  font-size: 8px;
                   text-decoration: line-through;
                 }
               }
               .price__btn {
-                width: 100%;
+                width: 100px;
                 border: none;
                 height: 25px;
                 font-size: 10px;
@@ -460,8 +461,3 @@
         }
   }
   
-
-  .container1{
-    width: 80%;
-    margin: auto;
-  }

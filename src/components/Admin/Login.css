@@ -1,0 +1,240 @@
+.section6__otadiv{
+    margin: 150px;
+    width: 1000px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid red;
+    border-radius: 30px;
+}
+.section6__otadiv__text__h1{
+    padding-top: 40px;
+    font-weight: 900;
+    font-size: 38px;
+    color: rgb(155, 11, 11);
+}
+.section6__otadiv__text__p{
+    color: rgb(60, 59, 59);
+    font-size: 12px;
+    font-weight: 700;
+}
+.section6__otadiv__input{
+    justify-content: center;
+    
+}
+.section6__otadiv__input1{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.ddd{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.section6__otadiv__input__btn{
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    width: 30px;
+    height: 30px;
+}
+.section6__otadiv__input__btn1{
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.register{
+    margin-top: 90px;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    height: 300px;
+    margin-left:350px;
+    border: 2px solid red;
+    width: 600px;
+}   
+@media only screen and (max-width: 1400px) {
+    .section6__otadiv__text__h1{
+        padding-top: 40px;
+        font-weight: 900;
+        font-size: 38px;
+        color: rgb(155, 11, 11);
+    }
+    .section6__otadiv__text__p{
+        color: rgb(60, 59, 59);
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .section6__otadiv__input{
+        justify-content: center;
+        
+    }
+    .section6__otadiv__input1{
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+    .ddd{
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+    .section6__otadiv__input__btn{
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        width: 30px;
+        height: 30px;
+    }
+    .section6__otadiv__input__btn1{
+        width: 30px;
+        height: 30px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+    .register{
+        margin-top: 90px;
+        border-radius: 20px;
+        text-align: center;
+        align-items: center;
+        height: 300px;
+        margin-left:250px;
+        border: 2px solid red;
+        width: 600px;
+    } 
+}
+@media only screen and (max-width: 1200px) {
+    .section6__otadiv__text__h1{
+        padding-top: 40px;
+        font-weight: 900;
+        font-size: 38px;
+        color: rgb(155, 11, 11);
+    }
+    .section6__otadiv__text__p{
+        color: rgb(60, 59, 59);
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .section6__otadiv__input{
+        justify-content: center;
+        
+    }
+    .section6__otadiv__input1{
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+    .ddd{
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+    .section6__otadiv__input__btn{
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        width: 30px;
+        height: 30px;
+    }
+    .section6__otadiv__input__btn1{
+        width: 30px;
+        height: 30px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+    .register{
+        margin-top: 90px;
+        border-radius: 20px;
+        text-align: center;
+        align-items: center;
+        height: 300px;
+        margin-left:150px;
+        border: 2px solid red;
+        width: 600px;
+    } 
+}
+@media only screen and (max-width: 995px) {
+    .section6__otadiv__text__h1{
+        padding-top: 40px;
+        font-weight: 900;
+        font-size: 38px;
+        color: rgb(155, 11, 11);
+    }
+    .section6__otadiv__text__p{
+        color: rgb(60, 59, 59);
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .section6__otadiv__input{
+        justify-content: center;
+        
+    }
+    .section6__otadiv__input1{
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+    .ddd{
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+    .section6__otadiv__input__btn{
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        width: 30px;
+        height: 30px;
+    }
+    .section6__otadiv__input__btn1{
+        width: 30px;
+        height: 30px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+    .register{
+        margin-top: 90px;
+        border-radius: 20px;
+        text-align: center;
+        align-items: center;
+        height: 300px;
+        margin-left:50px;
+        border: 2px solid red;
+        width: 600px;
+    } 
+}
+@media only screen and (max-width: 780px) {
+    .section6__otadiv__text__h1{
+        padding-top: 40px;
+        font-weight: 900;
+        font-size: 28px;
+        color: rgb(155, 11, 11);
+    }
+    .section6__otadiv__text__p{
+        color: rgb(60, 59, 59);
+        font-size: 9px;
+        font-weight: 700;
+    }
+    .section6__otadiv__input{
+        justify-content: center;
+        
+    }
+    .section6__otadiv__input1{
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+    .ddd{
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+    .section6__otadiv__input__btn{
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        width: 30px;
+        height: 30px;
+    }
+    .section6__otadiv__input__btn1{
+        width: 30px;
+        height: 30px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+    .register{
+        margin-top: 90px;
+        border-radius: 20px;
+        text-align: center;
+        align-items: center;
+        border: 2px solid red;
+        width: 100%;
+    } 
+}
