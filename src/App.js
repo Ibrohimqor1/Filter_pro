@@ -9,16 +9,16 @@ import Inner_side from "../src/components/Inner_Side/Inner_side"
 function App() {
   return (
     <>
-    <Routes>
-    <Route path='/' element={<Home/>}/>
-    <Route path='/doma' element={<Doma/>}/>
-    <Route path='/promish' element={<Promish/>}/>
-    <Route path='/all' element={<Items/>}/>
-    <Route path='/admin1' element={<Admin/>}/>
-    <Route path='/admin' element={<Admin_pas/>}/>
-    <Route path='/card/:_id' element={<Inner_side/>}/>
-    </Routes>
-     
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/doma' element={<Doma />} />
+        <Route path='/promish' element={<Promish />} />
+        <Route path='/all' element={<Items />} />
+        <Route path='/admin1' element={<Admin />} />
+        <Route path='/admin' element={<Admin_pas />} />
+        <Route path='/card/:_id' element={<Inner_side />} />
+      </Routes>
+
     </>
   );
 }
