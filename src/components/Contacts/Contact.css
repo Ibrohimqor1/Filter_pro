@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;600&display=swap');
+
+.contacts{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+h1{
+    padding: 20px 0;
+}
+
+.h3{
+    padding: 20px 0;
+}
+.contact_main{
+    text-align: left;
+    width:500px;
+    margin: auto;
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    margin: auto;
+    border-radius: 25px;
+    border: 1px solid black;
+height: 200px;
+
+align-items: center;
+
+-webkit-box-shadow: 12px 14px 8px 8px rgba(34, 60, 80, 0.27);
+-moz-box-shadow: 12px 14px 8px 8px rgba(34, 60, 80, 0.27);
+box-shadow: 12px 14px 8px 8px rgba(34, 60, 80, 0.27);
+}
+
+.parts{
+    margin: 20px 0;
+    text-align: left;
+}
+
+.parts h4{
+color: #a8c2ff;
+padding: 5px 0;
+}
+
+@media only screen and (max-width:535px) {
+ .card{
+    width: 400px;
+    font-size: 10px;
+ }
+
+ .contact_main{
+    text-align: left;
+    width:400px;
+    margin: auto;
+}
+}
+
+@media only screen and (max-width:415px) {
+    .card{
+       width: 370px;
+       font-size: 10px;
+    }
+   
+    .contact_main{
+       text-align: left;
+       width:370px;
+       margin: auto;
+   }
+   }

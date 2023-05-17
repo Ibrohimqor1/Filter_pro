@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
         <div className="navbar">
             <div className="left">
-<img src="http://filter-shop.kz/files/images/logo.png?v=018" alt="" />
+<img src="https://homefilter.kz/assets/images/common/logo_black.svg" alt="" />
             </div>
             <div className="center">
 <ul>
