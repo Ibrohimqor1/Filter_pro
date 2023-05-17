@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer'
 import Section from '../Section/Section'
 import Contact from '../Contacts/Contact'
 import CategCard from '../CategCard/CategCard'
-
+import Items from "../Items/Items"
 const Home = () => {
     return (
         <>
@@ -16,6 +16,7 @@ const Home = () => {
            <Section/>
            <Contact/>
            <CategCard/>
+           <Items/>
            <Footer/>
         </>
     )
