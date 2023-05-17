@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
 import axios from "axios";
-const api = "http://localhost:8000/filter";
+const api = "https://ibrohimqor1-filter-api-backend-1.onrender.com/filter/";
 const Context = createContext();
 
 const ContextProvider = ({ children }) => {
@@ -41,7 +41,7 @@ const ContextProvider = ({ children }) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/filter`)
+      .get(`https://ibrohimqor1-filter-api-backend-1.onrender.com/filter/`)
       .then((response) => {
         setData(response.data);
       })
@@ -51,7 +51,7 @@ const ContextProvider = ({ children }) => {
   }, []);
 
   const PatchElements = async (_id) => {
-    await axios.patch(`http://localhost:8000/filter/${_id}`, {
+    await axios.patch(`https://ibrohimqor1-filter-api-backend-1.onrender.com/filter/${_id}`, {
       title: title,
       image: image,
       desc: desc,
@@ -64,7 +64,7 @@ const ContextProvider = ({ children }) => {
   const AdminDelete = async (_id) => {
     try {
       const res = await axios
-        .delete(`http://localhost:8000/filter/${_id}`)
+        .delete(`https://ibrohimqor1-filter-api-backend-1.onrender.com/filter/${_id}`)
         .then(() => window.location.reload());
       console.log("Data deleted");
     } catch (error) {
@@ -74,7 +74,7 @@ const ContextProvider = ({ children }) => {
   const CreateDevice = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8000/filter/", {
+      .post("https://ibrohimqor1-filter-api-backend-1.onrender.com/filter/", {
         title: title,
         image: image,
         desc: desc,
