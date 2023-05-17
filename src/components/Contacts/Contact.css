@@ -67,4 +67,54 @@ padding: 5px 0;
        width:370px;
        margin: auto;
    }
+   .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: max-content;
+   }
+   .card img{
+    width: 80px;
+    margin-right: 15px;
+    margin-left: 10px;
+   }
+   }
+
+   @media only screen and (max-width:379px) {
+    .card{
+       width: 350px;
+       font-size: 10px;
+    }
+   
+    .contact_main{
+       text-align: left;
+       width:350px;
+       margin: auto;
+   }
+   }
+
+   @media only screen and (max-width:359px) {
+    .card{
+       width: 330px;
+       font-size: 10px;
+    }
+   
+    .contact_main{
+       text-align: left;
+       width:330px;
+       margin: auto;
+   }
+   }
+
+   @media only screen and (max-width:339px) {
+    .card{
+       width: 310px;
+       font-size: 10px;
+    }
+   
+    .contact_main{
+       text-align: left;
+       width:310px;
+       margin: auto;
+   }
    }

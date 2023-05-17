@@ -5,6 +5,7 @@ import Swiper from '../swiper/Swiper'
 import Footer from '../Footer/Footer'
 import Section from '../Section/Section'
 import Contact from '../Contacts/Contact'
+import CategCard from '../CategCard/CategCard'
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
            <Swiper/>
            <Section/>
            <Contact/>
+           <CategCard/>
            <Footer/>
         </>
     )
