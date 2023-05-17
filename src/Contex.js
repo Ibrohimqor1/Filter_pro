@@ -18,7 +18,11 @@ const ContextProvider = ({ children }) => {
   const [name, setName] = useState("");
   
 
+
+  
   let logoutClasses = "";
+
+
 
   const LogoutFunc = () => {
     const userAuth = JSON.parse(localStorage.getItem("auth"));
