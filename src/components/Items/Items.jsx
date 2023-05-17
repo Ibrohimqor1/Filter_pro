@@ -1,6 +1,6 @@
 import { useCart } from "react-use-cart";
 import React, { useContext } from "react";
-import { Context } from "../../../Contex";
+import { Context } from "../../Contex";
 import { Link, useParams } from "react-router-dom";
 import '../Items/items.scss'
 

@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useCart } from "react-use-cart";
-import { Context } from "../../../../Contex";
+import { Context } from "../../../Contex";
 
 
 import "../Doma/Doma.scss";

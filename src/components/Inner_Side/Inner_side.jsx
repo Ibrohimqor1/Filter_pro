@@ -1,10 +1,10 @@
-import { Context } from "../Footer";
+import { Context } from "../../Contex";
 import { Link, useParams } from "react-router-dom";
 import React, { useContext, useState, useEffect } from "react";
 
 import { useCart } from "react-use-cart";
 
-import "../Inner_Side/Inner_Side.scss"
+import "../Inner_Side/inner_side.scss"
 
 const Daily_Cards = () => {
   const { addItem, getItem, removeItem } = useCart();

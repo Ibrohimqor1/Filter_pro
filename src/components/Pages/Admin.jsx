@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Context } from "../../../Contex";
+import { Context } from "../../Contex";
 import "../Admin/Admin.scss";
 
 const Admin = () => {
