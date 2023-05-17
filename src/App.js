@@ -8,6 +8,7 @@ import Admin_pas from "../src/components/Admin/Admin_pas"
 import Inner_side from "../src/components/Inner_Side/Inner_side"
 function App() {
   return (
+    
     <>
       <Routes>
         <Route path='/' element={<Home />} />
