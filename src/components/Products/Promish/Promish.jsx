@@ -1,14 +1,14 @@
-import React, { useContext, useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-import { useCart } from "react-use-cart";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+
 import { Context } from "../../../Contex";
 
 
 import "../Doma/Doma.scss";
 
 const Charger_Pages = () => {
-  const { addItem, getItem, removeItem } = useCart();
-  const [setData] = useState([]);
+ 
+
   const { data } = useContext(Context);
 
   const newarray25 = data.filter((el) => el.category === "promish");

@@ -6,6 +6,7 @@ import Items from "../src/components/Pages/all"
 import Admin from "./components/Pages/Admin";
 import Admin_pas from "../src/components/Admin/Admin_pas"
 import Inner_side from "../src/components/Inner_Side/Inner_side"
+import Korzinka from "../src/components/Korzinka/Korzinka"
 function App() {
   return (
     
@@ -18,6 +19,7 @@ function App() {
         <Route path='/admin1' element={<Admin />} />
         <Route path='/admin' element={<Admin_pas />} />
         <Route path='/card/:_id' element={<Inner_side />} />
+        <Route path='/korzinka' element={<Korzinka/>}/>
       </Routes>
 
     </>

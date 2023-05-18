@@ -1,14 +1,14 @@
-import { useCart } from "react-use-cart";
+
 import React, { useContext } from "react";
 import { Context } from "../../Contex";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../Items/items.scss'
 
 
 const Daily = () => {
   const { mura, searchText, dataSearch } = useContext(Context);
-  const { addItem, getItem, removeItem } = useCart();
-  const { data } = useContext(Context);
+
+
 
   return (
     <div>

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Context } from "../../Contex";
 import "../Admin/Admin.scss";
 
@@ -7,10 +7,10 @@ const Admin = () => {
     data,
     PatchElements,
     AdminDelete,
-    createContext,
+    
     CreateDevice,
     title,
-    setData,
+    
     image,
     SetImage,
     price,

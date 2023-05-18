@@ -1,6 +1,6 @@
 import { Context } from "../../Contex";
-import { Link, useParams } from "react-router-dom";
-import React, { useContext, useState, useEffect } from "react";
+import {  useParams } from "react-router-dom";
+import React, { useContext } from "react";
 import Navbar from "../Navbar/Navbar";
 import { useCart } from "react-use-cart";
 
@@ -9,7 +9,7 @@ import "../Inner_Side/inner_side.scss"
 
 const Daily_Cards = () => {
   const { addItem, getItem, removeItem } = useCart();
-  const [setData] = useState([]);
+ 
     const {data} = useContext(Context)
     const { _id } = useParams();
 
