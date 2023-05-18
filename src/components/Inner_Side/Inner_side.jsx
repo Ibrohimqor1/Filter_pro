@@ -1,10 +1,11 @@
 import { Context } from "../../Contex";
 import { Link, useParams } from "react-router-dom";
 import React, { useContext, useState, useEffect } from "react";
-
+import Navbar from "../Navbar/Navbar";
 import { useCart } from "react-use-cart";
 
 import "../Inner_Side/inner_side.scss"
+
 
 const Daily_Cards = () => {
   const { addItem, getItem, removeItem } = useCart();
@@ -18,12 +19,12 @@ const Daily_Cards = () => {
 
   return (
     <div>
-      
+   <Navbar/>
       <div className="container">
-        <div className="maped_card">
+        <div style={{marginTop:"170px"}} className="maped_card">
           <div className="cardPlants_card" key={paramsFind?._id}>
-            <img className="cardPlants_card__img" src={paramsFind?.image} alt="" />
-            <div className="ggg_card">
+            <img data-aos="zoom-in-down" className="cardPlants_card__img" src={paramsFind?.image} alt="" />
+            <div className="ggg_card"data-aos="fade-left">
               <h1 className="cardPlants_card__h1">{paramsFind?.title}</h1>
               <hr />
              <div className="texts_card">
@@ -52,7 +53,7 @@ const Daily_Cards = () => {
           </div>
         </div>
       </div>
-    
+     
     </div>
   );
 };
