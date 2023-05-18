@@ -10,6 +10,7 @@ const ContextProvider = ({ children }) => {
   const [desc, SetDesc] = useState();
   const [category, SetCategory] = useState();
   const [price, SetPrice] = useState();
+
   const [data, setData] = useState([]);
 
   const [user, setUser] = useState("");
@@ -32,6 +33,7 @@ const ContextProvider = ({ children }) => {
       logoutClasses = "d-none"
     }
   };
+
   LogoutFunc()
   const userData = {
     name: name,
@@ -58,6 +60,7 @@ const ContextProvider = ({ children }) => {
       image: image,
       desc: desc,
       price: price,
+      
       category: category,
     });
     window.location.reload();
@@ -81,6 +84,7 @@ const ContextProvider = ({ children }) => {
         image: image,
         desc: desc,
         price: price,
+        
         category: category,
       })
       .then((res) => {
@@ -124,6 +128,7 @@ const ContextProvider = ({ children }) => {
         image,
         SetImage,
         price,
+        
         desc,
         SetDesc,
         SetPrice,
@@ -134,7 +139,8 @@ const ContextProvider = ({ children }) => {
         name,
         setName,
         number,
-        setNumber
+        setNumber,
+        
       }}
     >
       {children}

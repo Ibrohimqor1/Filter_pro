@@ -1,56 +1,79 @@
-
 .ooooo {
-    margin-top: 60px;
-    .ooooo__h1{
-      font-weight: 700;
-      text-align: center;
-      color: rgb(203, 18, 18);
+  margin-top: 60px;
+  .ooooo__h1 {
+    font-weight: 700;
+    text-align: center;
+    color: rgb(203, 18, 18);
+  }
+  .registr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .registr__input {
+      margin-top: 20px;
+      height: 40px;
+      width: 650px;
+      border-radius: 15px;
+      padding: 10px;
+      font-weight: 800;
+      border: 3px solid rgb(74, 0, 176);
     }
-    .registr {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      .registr__input {
-        margin-top: 20px;
-        height: 40px;
-        width: 650px;
-        border-radius: 15px;
-        padding: 10px;
-        font-weight: 800;
-        border: 3px solid rgb(203, 18, 18);
-      }
-      .register__btn{
-          width: 600px;
-          margin-top: 30px;
-          height: 50px;
-          border-radius: 20px;
-          font-size: 20px;
-          font-weight: 800;
-          border: 3px solid rgb(203, 18, 18);
-          transition: 0.2s;
-      }
-      .register__btn:hover{
-          width: 600px;
-          margin-top: 30px;
-          height: 50px;
-          border-radius: 20px;
-          color: white;
-          background-color:rgb(203, 18, 18) ;
-      }
+    .register__btn {
+      width: 600px;
+      margin-top: 30px;
+      height: 50px;
+      border-radius: 20px;
+      font-size: 20px;
+      font-weight: 800;
+      border: 3px solid rgb(203, 18, 18);
+      transition: 0.2s;
+    }
+    .register__btn:hover {
+      width: 600px;
+      margin-top: 30px;
+      height: 50px;
+      border-radius: 20px;
+      color: white;
+      background-color: rgb(203, 18, 18);
     }
   }
-  .ggg__btns{
-      display: flex;
-      gap: 20px;
-          .price__btn1{
-              width: 80px;
-              border: none;
-              background-color: rgb(203, 18, 18);
-              color: white;
-              font-weight: 700;
-              border-radius: 10px;
-          }
+}
+.ggg__btns {
+  display: flex;
+  gap: 20px;
+  .price__btn1 {
+    width: 80px;
+    border: none;
+    background-color: rgb(203, 18, 18);
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
   }
+}
 
-  
+.cardPlants{
+  height: max-content !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .registr__input {
+    margin-top: 20px;
+    height: 40px;
+    width: 350px !important;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: 800;
+    border: 3px solid rgb(22, 5, 176);
+  }
+  .register__btn {
+    width: 350px !important;
+    margin-top: 30px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    border: 3px solid rgb(203, 18, 18);
+    transition: 0.2s;
+  }
+}

@@ -30,22 +30,22 @@ const Daily_Cards = () => {
              <div className="texts_card">
              <p className="cardPlants_card__p">{paramsFind?.desc}</p>
               <div className="prices_card">
-                <p className="prices_card__1">{paramsFind?.oldPrice} $</p>
-                <p className="prices_card__2">{paramsFind?.price} $</p>
+                <p className="prices_card__1">{paramsFind?.price} som </p>
+                {/* <p className="prices_card__2">{paramsFind?.price} $</p> */}
               </div>
               {!getItem(paramsFind._id) ? (
                     <button
                       onClick={() => addItem({ ...paramsFind, id: paramsFind._id })}
                       className="price_card__btn"
                     >
-                      ADD TO CARD
+                      Добавить в Корзику
                     </button>
                   ) : (
                     <button
                       className="price_card__btn1"
                       onClick={() => removeItem(paramsFind._id)}
                     >
-                      REMOVE TO CARD
+                      Удалить из Корзинки
                     </button>
                   )}
              </div>

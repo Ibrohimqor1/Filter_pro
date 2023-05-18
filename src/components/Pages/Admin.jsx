@@ -55,6 +55,7 @@ const Admin = () => {
             type="number"
             className="registr__input"
           />
+        
           <input
             value={category}
             onChange={(e) => SetCategory(e.target.value)}
@@ -70,6 +71,7 @@ const Admin = () => {
       <div className="maped">
         {data.map((el) => {
           return (
+            <div className="container1">
             <div className="salom">
               <div className="cardPlants" key={el._id}>
                 <img className="cardPlants__img" src={el.image} alt="" />
@@ -78,6 +80,7 @@ const Admin = () => {
                   <p className="cardPlants__p">{el.desc}</p>
                   <div className="prices">
                     <p className="prices__1">{el.price} $</p>
+                    <p className="prices__1"> Kateg : {el.category} </p>
                   </div>
                   <div className="ggg__btns">
                     <button
@@ -95,6 +98,7 @@ const Admin = () => {
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           );
         })}

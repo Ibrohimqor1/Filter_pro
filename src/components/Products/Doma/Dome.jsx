@@ -30,9 +30,9 @@ const Charger_Pages = () => {
                   
                   <div className="prices">
                     <p className="prices__1">{el.price} som </p>
-                    <p className="prices__2">{el.oldPrice} som </p>
+                    
                   </div>
-                  <button className="price__btn">ADD TO CARD</button>
+                  <button className="price__btn">О продукте</button>
                 </div>
               </div>
             </Link>
