@@ -24,6 +24,15 @@ const ContextProvider = ({ children }) => {
 
 
 
+
+
+
+
+
+
+
+  
+
   const LogoutFunc = () => {
     const userAuth = JSON.parse(localStorage.getItem("auth"));
     if (userAuth) {
