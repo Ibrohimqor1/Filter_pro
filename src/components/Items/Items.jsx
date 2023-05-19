@@ -14,7 +14,8 @@ const Daily = () => {
     <div>
       <div className="container">
         <div className="inppp">
-          <input
+          <input 
+          data-aos="zoom-in-up"
             className="inputt"
             type="text"
             placeholder="Search ???"
@@ -27,7 +28,7 @@ const Daily = () => {
             console.log(el._id);
             return (
               <Link to={`/card/${el._id}`} >
-                <div className="container1">
+                <div data-aos="zoom-in-up" className="container1">
                   <div className="cardPlants" key={el._id}>
                     <img className="cardPlants__img" src={el.image} alt="" />
                     <div className="ggg">

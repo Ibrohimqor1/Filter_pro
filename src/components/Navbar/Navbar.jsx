@@ -6,7 +6,10 @@ const Navbar = () => {
     <>
         <div className="navbar">
             <div className="left">
+              <Link to="/">
+              
 <img src="https://homefilter.kz/assets/images/common/logo_black.svg" alt="" />
+              </Link>
             </div>
             <div className="center">
 <ul>
