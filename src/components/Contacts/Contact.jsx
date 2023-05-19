@@ -6,18 +6,18 @@ const Contact = () => {
     <div className="contacts">
 
     <div className="contact_main">
-    <h1>НАШИ КОНТАКТЫ</h1>
-        <h3 className='h3'>Адрес Ош область Араван район ул. Б.Айдаров 94    Пн-Вс 09:00 - 19:00</h3>
+    <h1 data-aos="zoom-in-up">НАШИ КОНТАКТЫ</h1>
+        <h3 data-aos="zoom-in-up" className='h3'>Адрес Ош область Араван район ул. Б.Айдаров 94    Пн-Вс 09:00 - 19:00</h3>
 
     </div>
         
 
         <div className="cards">
-            <div className="card">
-                <div className="card_1part">
+            <div data-aos="zoom-in-up" className="card">
+                <div  className="card_1part">
                     <img src="https://homefilter.kz/assets/images/contacts/pin.svg" alt="" />
                 </div>
-                <div className="card_2part">
+                <div data-aos="zoom-in-up" className="card_2part">
                     <div className="parts">
                     <h4>Адрес офиса:</h4>
                     <h3>Ош область Араван район ул. Б.Айдаров 94</h3>

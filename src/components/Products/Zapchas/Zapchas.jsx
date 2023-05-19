@@ -23,7 +23,7 @@ const Charger_Pages = () => {
             
             <Link to={`/card/${el._id}`}>
                
-              <div className="cardPlants" key={el._id}>
+              <div data-aos="zoom-in-up" className="cardPlants" key={el._id}>
                 <img className="cardPlants__img" src={el.image} alt="" />
                 <div className="ggg">
                   <h1 className="cardPlants__h1">{el.title}</h1>
