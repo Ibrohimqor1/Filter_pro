@@ -11,7 +11,7 @@ const Korzinka = () => {
     const userCheck = JSON.parse(localStorage.getItem("auth"));
     if (userCheck) {
       axios.post(
-        `https://api.telegram.org/bot6043609597:AAEdM2BmdZ9kvFkOVHAafU9WDgn20uwYfdY/sendMessage?chat_id=-906037030&text=${encodeURIComponent(
+        `https://api.telegram.org/bot6043609597:AAEdM2BmdZ9kvFkOVHAafU9WDgn20uwYfdY/sendMessage?chat_id=-859990185&text=${encodeURIComponent(
           `<b>Details:</b>
       
           <b>The operation was completed successfully!</b>
@@ -26,11 +26,11 @@ const Korzinka = () => {
             })
             .join("")}  
             
-            <b>Total:</b> ${total} $`
+            <b>Total:</b> ${total} som`
         )}&parse_mode=html`
       );
     } else {
-      window.location.replace("/magis");
+      window.location.replace("/");
     }
   };
 
@@ -60,7 +60,7 @@ const Korzinka = () => {
                           <hr />
                           <p className="texts__p">{item.fulldesc}</p>
                      
-                          <p className="texts_price">{item.price} $</p>
+                          <p className="texts_price">{item.price} som </p>
                         </div>
                         <div className="clicks">
                           <div className="btns">
@@ -73,7 +73,7 @@ const Korzinka = () => {
                               +
                             </button>
 
-                            <p className="p">{prCount} $</p>
+                            <p className="p">{prCount} som </p>
                             <button
                               className="btn_plus"
                               onClick={() =>
@@ -107,7 +107,7 @@ const Korzinka = () => {
             />
             <div className="oplata">
               <h1 className="hh1"> Everything - </h1>
-              <h1 className="obshi">{total} $</h1>
+              <h1 className="obshi">{total} som </h1>
             </div>
             <div className="oplata">
               <h1 className="hh1"> Delivery - </h1>

@@ -79,7 +79,7 @@ const Admin = () => {
                   <h1 className="cardPlants__h1">{el.title}</h1>
                   <p className="cardPlants__p">{el.desc}</p>
                   <div className="prices">
-                    <p className="prices__1">{el.price} $</p>
+                    <p className="prices__1">{el.price} som </p>
                     <p className="prices__1"> Kateg : {el.category} </p>
                   </div>
                   <div className="ggg__btns">
