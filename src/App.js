@@ -12,6 +12,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Magis from "../src/components/Products/Magis/Magis"
 import Top_Nav from "./components/topNav/topNav";
+import Zapchas from "../src/components/Products/Zapchas/Zapchas"
 function App() {
   return (
     
@@ -23,6 +24,7 @@ function App() {
         <Route path='/doma' element={<Doma />} />
         <Route path='/kortrij' element={<Kortrij />} />
         <Route path='/promish' element={<Promish />} />
+        <Route path='/zapchas' element={<Zapchas />} />
         <Route path='/magis' element={<Magis />} />
         <Route path='/all' element={<Items />} />
         <Route path='/admin1' element={<Admin />} />

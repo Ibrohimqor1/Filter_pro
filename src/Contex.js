@@ -124,6 +124,8 @@ const ContextProvider = ({ children }) => {
         createContext,
         CreateDevice,
         title,
+        
+        user, pass, name, number,
         setData,
         image,
         SetImage,

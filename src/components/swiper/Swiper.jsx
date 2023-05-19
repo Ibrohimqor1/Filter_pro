@@ -39,7 +39,10 @@ const Swiper = () => {
              </div>
              <div className="categ">
                 <img src="https://delux.kg/wp-content/uploads/2020/07/zrart3.png" alt="" />
+                <Link to="/zapchas">
                 <h3>Запасные части </h3>
+                </Link>
+                
              </div>
              <Link to="all">
              <div className="categ">

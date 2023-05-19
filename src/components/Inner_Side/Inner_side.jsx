@@ -1,7 +1,6 @@
 import { Context } from "../../Contex";
 import {  useParams } from "react-router-dom";
 import React, { useContext } from "react";
-import Navbar from "../Navbar/Navbar";
 import { useCart } from "react-use-cart";
 
 import "../Inner_Side/inner_side.scss"
