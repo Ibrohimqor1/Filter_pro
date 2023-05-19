@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { useCart } from "react-use-cart";
 import axios from "axios";
-import Navbar from "../Navbar/Navbar";
 import "../Korzinka/Korzinka.scss";
 import Footer from "../Footer/Footer";
 
@@ -15,14 +14,14 @@ const Korzinka = () => {
     const userCheck = JSON.parse(localStorage.getItem("auth"));
     if (userCheck) {
       axios.post(
-        `https://api.telegram.org/bot6293106942:AAEaqt2EHa8sphFx4IQzTotKDPka5wbWFs4/sendMessage?chat_id=-906037030&text=${encodeURIComponent(
+        `https://api.telegram.org/bot6043609597:AAEdM2BmdZ9kvFkOVHAafU9WDgn20uwYfdY/sendMessage?chat_id=-906037030&text=${encodeURIComponent(
           `<b>Details:</b>
       
           <b>The operation was completed successfully!</b>
           <b>our couriers will contact you soon! Ibrohim</b>
           <b> Call Center: +998 93 667 75 59 </b>
           <b> Zakaz qilingan ro'yhatlar  </b>
-          
+         
           ${items
             // <b> User: ${userCheck.login} </b>
             // <b> Password: ${userCheck.pass} </b>
@@ -36,13 +35,13 @@ const Korzinka = () => {
         )}&parse_mode=html`
       );
     } else {
-      window.location.replace("/regis");
+      window.location.replace("/");
     }
   };
 
   return (
     <>
-     <Navbar/>
+
       <div className="container">
         <div className="klmn">
           <div className="divvvs">
@@ -55,53 +54,53 @@ const Korzinka = () => {
                 return (
                   <div className="container1">
 
-              
-                  <div   className="iiii">
-                    <div className="carddd" data-aos="fade-right" key={item.id}>
-                      <div className="left">
-                        <img className="imggg" src={item.image} alt="" />
-                        <img className="imggg1" src={item.pic} alt="" />
-                      </div>
-                      <div className="right">
-                        <div className="text">
-                          
-                          <h1 className="h1">{item.title}</h1>
-                          <hr />
-                          <p className="texts__p">{item.fulldesc}</p>
-                         
-                          <p className="texts_price">{item.price} $</p>
-                        </div>
-                        <div className="clicks">
-                          <div className="btns">
-                            <button
-                              onClick={() =>
-                                updateItemQuantity(item._id, item.count++)
-                              }
-                              className="btn_plus"
-                            >
-                              +
-                            </button>
 
-                            <p className="p">{prCount} som </p>
-                            <button
-                              className="btn_plus"
-                              onClick={() =>
-                                updateItemQuantity(item.id, item.count--)
-                              }
-                            >
-                              -
-                            </button>
+                    <div className="iiii">
+                      <div className="carddd" data-aos="fade-right" key={item.id}>
+                        <div className="left">
+                          <img className="imggg" src={item.image} alt="" />
+                          <img className="imggg1" src={item.pic} alt="" />
+                        </div>
+                        <div className="right">
+                          <div className="text">
+
+                            <h1 className="h1">{item.title}</h1>
+                            <hr />
+                            <p className="texts__p">{item.fulldesc}</p>
+
+                            <p className="texts_price">{item.price} $</p>
                           </div>
-                          <h1
-                            onClick={() => removeItem(item.id)}
-                            className="delete"
-                          >
-                            Delete
-                          </h1>
+                          <div className="clicks">
+                            <div className="btns">
+                              <button
+                                onClick={() =>
+                                  updateItemQuantity(item._id, item.count++)
+                                }
+                                className="btn_plus"
+                              >
+                                +
+                              </button>
+
+                              <p className="p">{prCount} som </p>
+                              <button
+                                className="btn_plus"
+                                onClick={() =>
+                                  updateItemQuantity(item.id, item.count--)
+                                }
+                              >
+                                -
+                              </button>
+                            </div>
+                            <h1
+                              onClick={() => removeItem(item.id)}
+                              className="delete"
+                            >
+                              Delete
+                            </h1>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
                   </div>
                 );
               } else {
@@ -112,7 +111,7 @@ const Korzinka = () => {
           <div className="btnd" data-aos="fade-up">
             <img
               className="h11"
-            //   src={Logo}
+              //   src={Logo}
               alt=""
             />
             <div className="oplata">
@@ -135,49 +134,49 @@ const Korzinka = () => {
               {" "}
               Click
             </button>
-            </div>
-            <div
-              class="modal fade"
-              id="exampleModal"
-              data-mdb-toggle="modal"
-              data-mdb-target="#exampleModal"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      <img
-                        style={{ width: "150px", marginLeft: "150px" }}
-                        // src={Logo}
-                        alt=""
-                      />
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-mdb-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    Your request has been accepted. Our administrator will
-                    contact you 🙂👍🏻 <br />
-                    <span style={{textAlign:"center", color: "red", fontWeight: "800" }}>
-                      Please wait
-                    </span>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      style={{ width: "100%", fontWeight: "700" }}
-                      type="button"
-                      class="btn btn-danger"
-                    >
-                      Ok
-                    </button>
-                  </div>
+          </div>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    <img
+                      style={{ width: "150px", marginLeft: "150px" }}
+                      // src={Logo}
+                      alt=""
+                    />
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-mdb-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Your request has been accepted. Our administrator will
+                  contact you 🙂👍🏻 <br />
+                  <span style={{ textAlign: "center", color: "red", fontWeight: "800" }}>
+                    Please wait
+                  </span>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    style={{ width: "100%", fontWeight: "700" }}
+                    type="button"
+                    class="btn btn-danger"
+                  >
+                    Ok
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
 

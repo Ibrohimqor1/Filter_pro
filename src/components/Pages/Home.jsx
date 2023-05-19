@@ -11,8 +11,8 @@ import Doma from "../Products/Doma/Dome"
 const Home = () => {
     return (
         <>
-        <TopNav/>
-            <Navbar />
+       
+         
             {/* <Navbar1/> */}
            <Swiper/>
            <Section/>
@@ -20,7 +20,7 @@ const Home = () => {
            <CategCard/>
           
            <Doma/>
-           <Footer/>
+        
           
         </>
     )

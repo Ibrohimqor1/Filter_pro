@@ -5,9 +5,9 @@ import Footer from '../Footer/Footer'
 const Promish = () => {
   return (
     <div>
-        <Navbar/>
+      
         <Promish1/>
-        <Footer/>
+        
     </div>
   )
 }

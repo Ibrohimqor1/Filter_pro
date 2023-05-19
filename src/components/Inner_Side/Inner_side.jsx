@@ -19,7 +19,7 @@ const Daily_Cards = () => {
 
   return (
     <div>
-   <Navbar/>
+   
       <div className="container">
         <div style={{marginTop:"170px"}} className="maped_card">
           <div className="cardPlants_card" key={paramsFind?._id}>

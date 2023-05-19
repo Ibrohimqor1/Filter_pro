@@ -24,7 +24,7 @@ const Navbar = () => {
             <div className="right">
               <Link to="/korzinka">
               <h4>
-+7 951 159 1979</h4>
+Korzinka</h4>
               </Link>
 
             </div>
