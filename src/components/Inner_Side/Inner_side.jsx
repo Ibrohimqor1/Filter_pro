@@ -20,7 +20,7 @@ const Daily_Cards = () => {
   return (
     <div>
    
-      <div className="container">
+      <div className="container1">
         <div style={{marginTop:"170px"}} className="maped_card">
           <div className="cardPlants_card" key={paramsFind?._id}>
             <img data-aos="zoom-in-down" className="cardPlants_card__img" src={paramsFind?.image} alt="" />

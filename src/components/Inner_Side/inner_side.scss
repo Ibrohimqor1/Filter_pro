@@ -10,8 +10,10 @@
                 background-color: rgb(232, 230, 230);
                 transition: 0.2s;
             }
+           
             .ggg_card{
                 margin-top: 50px;
+               
 
                     .cardPlants_card__h1{
                         color: rgb(67, 67, 67);
@@ -35,7 +37,7 @@
                             }
                             .prices_card__2{
                                 padding-top: 5px;
-                                color: rgb(187, 14, 14);
+                                color: #a8c2ff;
                                 font-weight: 900;
                                 font-size: 20px;
                                 text-decoration: line-through;
@@ -46,7 +48,7 @@
                     .price_card__btn{
                         margin-top: 15px;
                         border: none;
-                        background-color: rgb(187, 14, 14);
+                        background-color: #a8c2ff;
                         width: 300px;
                         color: white;
                         font-weight: 600;
@@ -60,8 +62,8 @@
                         border: none;
                         background-color: rgb(255, 255, 255);
                         width: 300px;
-                        border: 2px solid rgb(187, 14, 14);
-                        color: rgb(187, 14, 14);
+                        border: 2px solid #a8c2ff;
+                        color: #a8c2ff;
                         font-weight: 700;
                         height: 50px;
                         font-size: 20px;
@@ -118,18 +120,19 @@
                                 }
                                 .prices_card__2{
                                     padding-top: 5px;
-                                    color: rgb(187, 14, 14);
+                                    color: #a8c2ff;
                                     font-weight: 900;
                                     font-size: 18px;
                                     text-decoration: line-through;
                                 }
+                               
                                
     
                         }
                         .price_card__btn{
                             margin-top: 40px;
                             border: none;
-                            background-color: rgb(187, 14, 14);
+                            background-color: #a8c2ff;
                             width: 300px;
                             color: white;
                             font-weight: 600;
@@ -143,8 +146,8 @@
                             border: none;
                             background-color: rgb(255, 255, 255);
                             width: 300px;
-                            border: 2px solid rgb(187, 14, 14);
-                            color: rgb(187, 14, 14);
+                            border: 2px solid #a8c2ff;
+                            color: #a8c2ff;
                             font-weight: 700;
                             height: 45px;
                             font-size: 20px;
@@ -159,6 +162,7 @@
     .maped_card{
         justify-content: center;
         margin-top: 100px;
+        text-align: center;
         .cardPlants_card{
             justify-content: center;
             place-items: center;
@@ -195,7 +199,7 @@
                                 }
                                 .prices_card__2{
                                     padding-top: 5px;
-                                    color: rgb(187, 14, 14);
+                                    color: rgb(52, 15, 201);
                                     font-weight: 900;
                                     font-size: 15px;
                                     text-decoration: line-through;
@@ -206,7 +210,7 @@
                         .price_card__btn{
                             margin-top: 10px;
                             border: none;
-                            background-color: rgb(187, 14, 14);
+                            background-color: #a8c2ff;
                             width: 250px;
                             color: white;
                             font-weight: 600;
@@ -220,8 +224,8 @@
                             border: none;
                             background-color: rgb(255, 255, 255);
                             width: 250px;
-                            border: 2px solid rgb(187, 14, 14);
-                            color: rgb(187, 14, 14);
+                            border: 2px solid #a8c2ff;
+                            color: #a8c2ff;
                             font-weight: 700;
                             height: 30px;
                             font-size: 15px;
