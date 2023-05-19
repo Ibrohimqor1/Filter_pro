@@ -13,5 +13,13 @@ a{
     color: white;
 }
 
+.maped .cardPlants {
+    border: 1px solid rgb(202, 202, 202);
+    width: 425px;
+    display: flex;
+    border-radius: 10px;
+    height: 190px !important;
+    margin-top: 20px;
+}
 
 
