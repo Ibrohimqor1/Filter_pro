@@ -24,8 +24,8 @@ export default function App() {
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="mySwiper"
       >
-         <SwiperSlide><img src="http://filter-shop.kz/files/resized/slides/stakan-2.0.1067x400.center.center.png.webp" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="http://filter-shop.kz/files/resized/slides/korpusa.1067x400.center.center.png.webp" alt="" /></SwiperSlide>
+         <SwiperSlide><img src="https://d2evkimvhatqav.cloudfront.net/images/_800x418_crop_center-center_82_none/children_water_126439930.jpg?v=1683291228" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="https://d2evkimvhatqav.cloudfront.net/images/_800x418_crop_center-center_82_none/children_water_126439930.jpg?v=1683291228" alt="" /></SwiperSlide>
        
        
         <SwiperSlide><img src="http://filter-shop.kz/files/resized/slides/avtomaty.1067x400.center.center.png.webp" alt="" /></SwiperSlide>
