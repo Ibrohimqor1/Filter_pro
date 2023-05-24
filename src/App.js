@@ -13,6 +13,7 @@ import Footer from "./components/Footer/Footer";
 import Magis from "../src/components/Products/Magis/Magis"
 import Top_Nav from "./components/topNav/topNav";
 import Zapchas from "../src/components/Products/Zapchas/Zapchas"
+import About from "./components/About/about";
 function App() {
   return (
     
@@ -31,6 +32,7 @@ function App() {
         <Route path='/admin' element={<Admin_pas />} />
         <Route path='/card/:_id' element={<Inner_side />} />
         <Route path='/korzinka' element={<Korzinka/>}/>
+        <Route path='/about' element={About}/>
       </Routes>
 <Footer/>
     </>

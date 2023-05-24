@@ -1,0 +1,20 @@
+.Mobile{
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+   z-index: 99;
+    bottom: 0;
+   width: 100%;
+   background-color: #00C0F0;
+   align-items: center;
+}
+
+.mobile_home{
+    width: 30px;
+    height: 30px;
+}
+
+.mobile_item{
+    text-align: center;
+    margin: 10px;
+}

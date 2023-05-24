@@ -13,6 +13,7 @@ root.render(
   <CartProvider>
   <BrowserRouter>
       <App />
+      
     </BrowserRouter>
 
   </CartProvider>

@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="center">
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="">Home</a></li>
+            <Link to="/about"><a href="">About</a></Link>
             <li><a href="">Home</a></li>
             <li><a href="">Home</a></li>
             <Link to="/admin">
@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="right">
           <Link to="/korzinka">
             <h4>
-              Korzinka</h4>
+              <img className='icon' src="https://www.ibu.paris/modules/blockreassurance/views/img/img_perso/caddiee.png" alt="" /></h4>
           </Link>
 
         </div>
