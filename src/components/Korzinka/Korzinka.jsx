@@ -8,7 +8,7 @@ const Korzinka = () => {
   // const { user, pass, name, number } = useContext(Context);
   const { items, isEmpty, updateItemQuantity, removeItem } = useCart();
   const postTest = () => {
-    const userCheck = JSON.parse(localStorage.getItem("auth"));
+    const userCheck =() => JSON.parse(localStorage.getItem("auth"));
     if (userCheck) {
       axios.post(
         `https://api.telegram.org/bot6141243013:AAHy79TpnOikV3MixBG_L8cfFMvZODHtF9g/sendMessage?chat_id=-906037030&text=${encodeURIComponent(

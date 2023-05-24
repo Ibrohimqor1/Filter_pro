@@ -210,7 +210,7 @@
                 gap: 10px;
         
                 .p {
-                  color: red;
+                  color: rgb(2, 2, 2);
                   font-size: 13px;
                   font-weight: 900;
                   padding-top: 10px;
@@ -250,8 +250,8 @@
             margin-top: 50px;
             width: 400px;
             height: 250px;
-            border: 2px solid rgb(179, 9, 9);
-            box-shadow: 0 0 20px 1px rgb(255, 163, 163);
+            border: 2px solid #00C0F0;
+            box-shadow: 0 0 20px 1px #00C0F0;
             .h11{
                 padding-top: 20px;
                 width: 200px;
@@ -267,7 +267,7 @@
               }
               .obshi{
                 font-weight: 900;
-                color: red;
+                color: rgb(2, 2, 2);
                 padding-top: 15px;
                 font-size: 20px;
               }
@@ -293,7 +293,7 @@
       justify-content: center;
       margin-top: 50px;
       width: 100%;
-      border: 2px solid rgb(179, 9, 9);
+      border: 2px solid #00C0F0;
       box-shadow: 0 0 20px 1px rgb(255, 163, 163);
       .h11{
           padding-top: 20px;
@@ -310,7 +310,7 @@
         }
         .obshi{
           font-weight: 900;
-          color: red;
+          color: rgb(0, 0, 0);
           padding-top: 15px;
           font-size: 20px;
         }
@@ -320,7 +320,7 @@
           color: white;
           border-radius: 10px;
           height: 35px;
-          background-color: rgb(179, 18, 18);
+          background-color: #00C0F0;
           border: none;
         width: 200px;
       }
@@ -353,7 +353,7 @@
                 gap: 5px;
         
                 .p {
-                  color: red;
+                  color: rgb(0, 0, 0);
                   font-size: 13px;
                   font-weight: 900;
                 }
@@ -376,7 +376,7 @@
                 color: white;
                 width: 90%;
                 border-radius: 15px;
-                background-color: rgb(196, 28, 28);
+                background-color: #00C0F0;
               }
                 }
             }
@@ -435,7 +435,7 @@
                 gap: 20px;
         
                 .p {
-                  color: red;
+                  color: rgb(0, 0, 0);
                   font-size: 13px;
                   font-weight: 900;
                 }
@@ -458,7 +458,7 @@
                 color: white;
                 width: 93%;
                 border-radius: 15px;
-                background-color: rgb(196, 28, 28);
+                background-color: #00C0F0;
               }
                 }
             }
@@ -514,7 +514,7 @@
                 gap: 20px;
         
                 .p {
-                  color: red;
+                  color: rgb(3, 3, 3);
                   font-size: 13px;
                   font-weight: 900;
                 }
@@ -537,10 +537,15 @@
                 color: white;
                 width: 93%;
                 border-radius: 15px;
-                background-color: rgb(196, 28, 28);
+                background-color: #00C0F0;
               }
                 }
             }
         }
     }
+  }
+
+  .oplata{
+  align-items: center;
+  text-align: center;
   }
