@@ -1,6 +1,8 @@
 .section{
-    background-image: url(https://youtu.be/VudwL_rIn90?list=TLGGUVdQA-J876UyMjA1MjAyMw&t=13);
+    background: rgb(233, 234, 240) url(https://cdn.pixabay.com/photo/2016/04/15/04/02/water-1330252_960_720.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
     margin: 20px 0;
     display: flex;
     align-items: center;

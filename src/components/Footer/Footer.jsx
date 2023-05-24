@@ -130,7 +130,7 @@ const Footer = () => {
             </div>
             <hr />
 
-            <div data-aos="flip-up" className="footer_bottom">
+            <div  className="footer_bottom">
                 <div className="left">
 <h3>© 2023
 Интернет-магазин </h3>

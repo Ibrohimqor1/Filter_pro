@@ -1,7 +1,7 @@
 .top_navbar{
     display: flex;
     justify-content: space-evenly;
-    background-color: #a8c2ff;
+    background-color: #00C0F0;
     padding: 4px;
 }
 
@@ -18,7 +18,7 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     width: 250px;
-    background-color: #a8c2ff;
+    background-color: #96f7f7;
 }
 
 .carddd .right .clicks .delete {

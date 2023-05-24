@@ -1,7 +1,7 @@
 .footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background-color: #a8c2ff;
+    background-color: #00C0F0;
     bottom: 0px;
     color: white;
     margin-top: 150px;
@@ -24,7 +24,7 @@
 }
 
 .footer_bottom {
-    background-color: #a8c2ff;
+    background-color: #00C0F0;
     display: flex;
     justify-content: space-evenly;
     height: 60px;
