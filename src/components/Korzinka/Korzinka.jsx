@@ -43,33 +43,34 @@ const Korzinka = () => {
       
     
 
-  const userCheck =() => JSON.parse(localStorage.getItem("auth"));
-  if (userCheck) {
-    axios.post(
-      `https://api.telegram.org/bot6141243013:AAHy79TpnOikV3MixBG_L8cfFMvZODHtF9g/sendMessage?chat_id=-906037030&text=${encodeURIComponent(
-        `<b>Ma'lumotlar:</b>
-    
-        <b>Zakaz Tushti</b> </br>
-        <b>Marhamat zakaz haqida malumotlarni ko'rishiz mumkun</b> </br>
-        <b> Nomer: +998 99 946 45 99 </b> </br>
-       
-        ${items
-          // <b> Name: ${userCheck.name} </b>
+  const postTest = () => {
+    const userCheck = () => JSON.parse(localStorage.getItem("auth"));
+    if (userCheck) {
+      axios.post(
+        `https://api.telegram.org/bot6141243013:AAHy79TpnOikV3MixBG_L8cfFMvZODHtF9g/sendMessage?chat_id=-906037030&text=${encodeURIComponent(
+          `<b>Ma'lumotlar:</b>
+      
+          <b>  Zakaz Tushti</b> 
+          <b>Marhamat zakaz haqida malumotlarni ko'rishiz mumkun</b> 
+          <b> Nomer: +998 99 946 45 99 </b> 
+          
+          ${items
+          //   <b> Name: ${userCheck.name} </b>
           // <b> User: ${userCheck.login} </b>
           // <b> Password: ${userCheck.pass} </b>
-          .map((item) => {
-            return ` <b>${item.title}</b> ${item.count} x ${item.price} som = ${item.count} `;
-          })
-          .join("")}  
-          
-          <b>Total:</b> ${total} som`
-      )}&parse_mode=html`
-    
-    );
-  } else {
-    window.location.replace("/");
-  }
-};
+            .map((item) => {
+              return ` <b>${item.title}</b> ${item.count} x ${item.price} som = ${item.count} штук `;
+            })
+            .join("")}  
+            
+            <b>Total:</b> ${total} som`
+        )}&parse_mode=html`
+      );
+      window.location.replace("/");
+    } else {
+      window.location.replace("/");
+    }
+  };
 
   return (
     <>
@@ -143,11 +144,11 @@ const Korzinka = () => {
               alt=""
             />
             <div className="oplata">
-              <h1 className="hh1"> Everything - </h1>
+              <h1 className="hh1"> Hammasi - </h1>
               <h1 className="obshi">{total} som </h1>
             </div>
             <div className="oplata">
-              <h1 className="hh1"> Delivery - </h1>
+              <h1 className="hh1"> Yetkazib Berish - </h1>
               <h1 className="obshi"> 0 $</h1>
             </div>
             <button
