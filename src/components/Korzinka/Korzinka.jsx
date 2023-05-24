@@ -5,22 +5,23 @@ import "../Korzinka/Korzinka.scss";
 import { Context } from "../../Contex";
 const Korzinka = () => {
   let total = 0;
-  const { user, pass, name, number } = useContext(Context);
+  // const { user, pass, name, number } = useContext(Context);
   const { items, isEmpty, updateItemQuantity, removeItem } = useCart();
   const postTest = () => {
     const userCheck = JSON.parse(localStorage.getItem("auth"));
     if (userCheck) {
       axios.post(
-        `https://api.telegram.org/bot6043609597:AAEdM2BmdZ9kvFkOVHAafU9WDgn20uwYfdY/sendMessage?chat_id=5706403142&text=${encodeURIComponent(
+        `https://api.telegram.org/bot6141243013:AAHy79TpnOikV3MixBG_L8cfFMvZODHtF9g/sendMessage?chat_id=-906037030&text=${encodeURIComponent(
           `<b>Details:</b>
       
           <b>The operation was completed successfully!</b>
           <b>our couriers will contact you soon! Ibrohim</b>
           <b> Call Center: +998 99 946 45 99 </b>
-          <b> Name: ${userCheck.name} </b>
-          <b> User: ${userCheck.login} </b>
-          <b> Password: ${userCheck.pass} </b>
+         
           ${items
+            // <b> Name: ${userCheck.name} </b>
+            // <b> User: ${userCheck.login} </b>
+            // <b> Password: ${userCheck.pass} </b>
             .map((item) => {
               return ` <b>${item.name}</b> ${item.count} x ${item.price} som = ${item.count} `;
             })
