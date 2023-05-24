@@ -11,7 +11,7 @@ const Korzinka = () => {
     const userCheck = JSON.parse(localStorage.getItem("auth"));
     if (userCheck) {
       axios.post(
-        `https://api.telegram.org/bot6043609597:AAEdM2BmdZ9kvFkOVHAafU9WDgn20uwYfdY/sendMessage?chat_id=-859990185&text=${encodeURIComponent(
+        `https://api.telegram.org/bot6043609597:AAEdM2BmdZ9kvFkOVHAafU9WDgn20uwYfdY/sendMessage?chat_id=5706403142&text=${encodeURIComponent(
           `<b>Details:</b>
       
           <b>The operation was completed successfully!</b>
@@ -132,7 +132,7 @@ const Korzinka = () => {
               data-mdb-toggle="modal"
               data-mdb-target="#exampleModal"
             >
-              <div class="modal-dialog">
+              {/* <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">
@@ -166,7 +166,7 @@ const Korzinka = () => {
                     </button>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
         </div>
       </div>
