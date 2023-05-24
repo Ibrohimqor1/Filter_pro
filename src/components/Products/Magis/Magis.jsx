@@ -5,6 +5,9 @@ import { Context } from "../../../Contex";
 
 
 import "../Doma/Doma.scss";
+import Top_Nav from "../../topNav/topNav";
+import Navbar from "../../Navbar/Navbar";
+
 
 const Charger_Pages = () => {
  
@@ -13,7 +16,11 @@ const Charger_Pages = () => {
 
   const newarray25 = data.filter((el) => el.category === "magis");
   return (
+    <>
+    <Top_Nav/>
+<Navbar/>
     <div className="container1">
+      
          <h1>Фильтры для Фильтры для дома</h1>
       <div className="maped">
      
@@ -40,6 +47,7 @@ const Charger_Pages = () => {
         })}
       </div>
     </div>
+    </>
   );
 };
 

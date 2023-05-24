@@ -4,6 +4,8 @@ import React, { useContext } from "react";
 import { useCart } from "react-use-cart";
 
 import "../Inner_Side/inner_side.scss"
+import Top_Nav from "../topNav/topNav";
+import Navbar from "../Navbar/Navbar";
 
 
 const Daily_Cards = () => {
@@ -18,7 +20,8 @@ const Daily_Cards = () => {
 
   return (
     <div>
-   
+   <Top_Nav/>
+<Navbar/>
       <div className="container1">
         <div style={{marginTop:"170px"}} className="maped_card">
           <div className="cardPlants_card" key={paramsFind?._id}>

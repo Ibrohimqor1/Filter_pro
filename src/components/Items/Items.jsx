@@ -3,6 +3,8 @@ import React, { useContext } from "react";
 import { Context } from "../../Contex";
 import { Link } from "react-router-dom";
 import '../Items/items.scss'
+import Top_Nav from "../topNav/topNav";
+import Navbar from "../Navbar/Navbar";
 
 
 const Daily = () => {
@@ -12,6 +14,8 @@ const Daily = () => {
 
   return (
     <div>
+      <Top_Nav/>
+<Navbar/>
       <div className="container">
         <div className="inppp">
           <input 

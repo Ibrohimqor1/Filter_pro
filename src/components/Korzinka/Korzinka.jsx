@@ -2,6 +2,9 @@ import React from "react";
 import { useCart } from "react-use-cart";
 import axios from "axios";
 import "../Korzinka/Korzinka.scss";
+import Top_Nav from "../topNav/topNav";
+import Navbar from "../Navbar/Navbar";
+
 // import { Context } from "../../Contex";
 // import { clear } from "@testing-library/user-event/dist/clear";
 const Korzinka = () => {
@@ -74,7 +77,8 @@ const Korzinka = () => {
 
   return (
     <>
-     
+      <Top_Nav/>
+<Navbar/>
       <div className="container1">
         <div className="klmn" id="kor">
           <div className="divvvs">

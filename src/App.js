@@ -8,18 +8,17 @@ import Admin_pas from "../src/components/Admin/Admin_pas"
 import Inner_side from "../src/components/Inner_Side/Inner_side"
 import Korzinka from "../src/components/Korzinka/Korzinka"
 import Kortrij from "../src/components/Products/Kortrij/Kortrij"
-import Navbar from "./components/Navbar/Navbar";
+
 import Footer from "./components/Footer/Footer";
 import Magis from "../src/components/Products/Magis/Magis"
-import Top_Nav from "./components/topNav/topNav";
+
 import Zapchas from "../src/components/Products/Zapchas/Zapchas"
 import About from "./components/About/about";
 function App() {
   return (
     
     <>
-     <Top_Nav/>
-    <Navbar/>
+   
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/doma' element={<Doma />} />

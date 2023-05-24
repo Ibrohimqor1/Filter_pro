@@ -2,6 +2,12 @@ import React from 'react'
 import "../Navbar/Navbar.css"
 import { Link } from 'react-router-dom'
 const Navbar = () => {
+  React.useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <div className="navbar">
