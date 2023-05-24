@@ -21,6 +21,11 @@ const Mobile = () => {
             </div>
             <Link to="/korzinka">
            
+
+
+
+
+           
             <div className="mobile_item">
             <img className='mobile_home' src="https://www.ibu.paris/modules/blockreassurance/views/img/img_perso/caddiee.png" alt="" />
 <h6>Korzinka</h6>
