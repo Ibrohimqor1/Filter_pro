@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
 import { Context } from "../../../Contex";
-
+import Top_Nav from "../../topNav/topNav";
+import Navbar from "../../Navbar/Navbar";
 
 import "../Doma/Doma.scss";
 
@@ -13,6 +14,10 @@ const Charger_Pages = () => {
 
   const newarray25 = data.filter((el) => el.category === "zapchas");
   return (
+    <>
+    <Top_Nav/>
+<Navbar/>
+    
     <div className="container1">
          <h1>Полупромышленный фильтр</h1>
       <div className="maped">
@@ -40,6 +45,7 @@ const Charger_Pages = () => {
         })}
       </div>
     </div>
+    </>
   );
 };
 

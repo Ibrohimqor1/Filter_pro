@@ -16,7 +16,9 @@ const Charger_Pages = () => {
 
   const newarray25 = data.filter((el) => el.category === "promish");
   return (
-
+<>
+<Top_Nav/>
+<Navbar/>
     <div className="container1">
          <h1>Полупромышленный фильтр</h1>
       <div className="maped">
@@ -24,12 +26,12 @@ const Charger_Pages = () => {
         {newarray25.map((el) => {
           console.log(el._id);
           return (
+           <>
            
             <Link to={`/card/${el._id}`}>
                
               <div data-aos="zoom-in-up" className="cardPlants" key={el._id}>
-              <Top_Nav/>
-<Navbar/>
+              
                 <img className="cardPlants__img" src={el.image} alt="" />
                 <div className="ggg">
                   <h1 className="cardPlants__h1">{el.title}</h1>
@@ -41,11 +43,14 @@ const Charger_Pages = () => {
                   <button className="price__btn">О продукте</button>
                 </div>
               </div>
+             
             </Link>
+            </>
           );
         })}
       </div>
     </div>
+    </>
   );
 };
 

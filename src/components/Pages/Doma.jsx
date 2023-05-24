@@ -6,8 +6,7 @@ import Navbar from "../Navbar/Navbar";
 const About = () => {
   return (
     <>
-     <Top_Nav/>
-<Navbar/>
+   
     <Doma/>
    
     </>

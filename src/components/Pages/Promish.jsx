@@ -6,8 +6,7 @@ import Navbar from "../Navbar/Navbar";
 const Promish = () => {
   return (
     <div>
-       <Top_Nav/>
-<Navbar/>
+      
         <Promish1/>
         
     </div>
