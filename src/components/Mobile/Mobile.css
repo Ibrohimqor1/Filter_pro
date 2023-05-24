@@ -1,12 +1,5 @@
 .Mobile{
-    display: flex;
-    justify-content: space-evenly;
-    position: fixed;
-   z-index: 99;
-    bottom: 0;
-   width: 100%;
-   background-color: #00C0F0;
-   align-items: center;
+    display: none;
 }
 
 .mobile_home{
@@ -17,4 +10,18 @@
 .mobile_item{
     text-align: center;
     margin: 10px;
+}
+
+
+@media only screen and (max-width:600px) {
+    .Mobile{
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+       z-index: 99;
+        bottom: 0;
+       width: 100%;
+       background-color: #00C0F0;
+       align-items: center;
+    }
 }

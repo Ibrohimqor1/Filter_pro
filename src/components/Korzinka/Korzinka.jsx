@@ -76,7 +76,7 @@ const Korzinka = () => {
     <>
      
       <div className="container1">
-        <div className="klmn">
+        <div className="klmn" id="kor">
           <div className="divvvs">
             {isEmpty ? <h1 className="ddd"> There is nothing </h1> : null}
             {items.map((item) => {
