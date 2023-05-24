@@ -23,7 +23,7 @@ const Charger_Pages = () => {
       <div className="maped">
      
         {newarray25.map((el) => {
-          console.log(el._id);
+          // console.log(el._id);
           return (
             
             <Link to={`/card/${el._id}`}>
