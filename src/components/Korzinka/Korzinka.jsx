@@ -52,7 +52,7 @@ const Korzinka = () => {
       
           <b>  Zakaz Tushti</b> 
           <b>Marhamat zakaz haqida malumotlarni ko'rishiz mumkun</b> 
-          <b> Nomer: +998 99 946 45 99 </b> 
+          <b> Nomer: +998 93 6677559 </b> 
           
           ${items
           //   <b> Name: ${userCheck.name} </b>
