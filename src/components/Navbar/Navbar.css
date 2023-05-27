@@ -12,7 +12,29 @@
     z-index: 99; */
    
 }
-
+.sign__btns{
+    display: flex;
+    gap: 15px;
+}
+.sign__up__btn{
+    width: 90px;
+    height: 30px;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.sign__up__btn:hover{
+    background-color: white;
+    color: rgb(53, 53, 53);
+    font-weight: 700;
+    box-shadow: 0 0 10px 1px rgb(66, 217, 255);
+}
+.right{
+    display: flex;
+    gap: 30px;
+}
 .navbar ul {
     list-style: none;
     display: flex;
