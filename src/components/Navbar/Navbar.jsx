@@ -11,6 +11,7 @@ const Navbar = () => {
       behavior: "smooth",
     });
   }, []);
+
   const { items } = useCart();
   return (
     <>
@@ -40,21 +41,26 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="right">
-          <Link to="/korzinka" class="text-reset me-3" href="#">
-            <i style={{ width: "20px" }} class="fas fa-shopping-cart"></i>
-            <span class="bb badge rounded-pill badge-notification bg-danger">
-              {items.length}
-            </span>
-          </Link>
-          <div className="sign__btns">
-            <Link to="/sign-up" className="sign__up__btn">
-              Sign Up
-            </Link>
-            <Link to="/sign-in" className="sign__up__btn">
-              Sign In
+        <div className="sign__btns">
+          <div className="sign__btns__kor">
+            <Link
+              className="srtdb"
+              to="/korzinka"
+              class="text-reset me-3"
+              href="#"
+            >
+              <i style={{ width: "20px" }} class="fas fa-shopping-cart"></i>
+              <span class="bb badge rounded-pill badge-notification bg-danger">
+                {items.length}
+              </span>
             </Link>
           </div>
+          <Link to="/sign-up" className="sign__up__btn">
+            Sign Up
+          </Link>
+          <Link to="/sign-in" className="sign__up__btn">
+            Sign In
+          </Link>
         </div>
       </div>
     </>
