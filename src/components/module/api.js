@@ -1,4 +1,4 @@
-const HostPath = "http://localhost:8080";
+const HostPath = "http://localhost:5050";
 
 export const PostFunc = (path, data) => {
   path = HostPath + path;

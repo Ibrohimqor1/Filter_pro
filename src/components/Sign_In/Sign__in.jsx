@@ -2,7 +2,7 @@ import React from "react";
 import "../Sign_In/Sign__in.css";
 import { Context } from "../../Contex";
 import { useContext } from "react";
-import { GetAPIFunc } from "./../module/api";
+import { GetAPIFunc } from "../module/api";
 import Navbar from "../Navbar/Navbar";
 
 export default function Sign_in() {

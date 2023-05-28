@@ -11,7 +11,37 @@
     width: 100%;
     z-index: 99; */
 }
-
+.dropdown{
+    margin-left: 20px;
+    margin-top: -10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background: #00c0f0;
+    font-weight: 700;
+    border: 2px solid white;
+    text-align: center;
+    align-items: center;
+    padding-top: 6px;
+    transition: 0.5s;
+}
+.dropdown:hover{
+    margin-left: 20px;
+    margin-top: -10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background: #00c0f0;
+    font-weight: 700;
+    border: 2px solid red;
+    text-align: center;
+    align-items: center;
+    padding-top: 6px;
+}
+.sign{
+    display: flex;
+    gap: 15px;
+}
 .bb{
     margin-top: -8px;
     margin-left: -8px;

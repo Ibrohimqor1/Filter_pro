@@ -1,4 +1,5 @@
-import React from "react";
+import { Context } from "../../Contex";
+import React, { useContext } from "react";
 import "../Navbar/Navbar.css";
 // module
 import { useCart } from "react-use-cart";
@@ -13,6 +14,30 @@ const Navbar = () => {
   }, []);
 
   const { items } = useCart();
+
+  const { logoutClasses, LogoutFunc } = useContext(Context);
+  LogoutFunc();
+  const Logout = () => {
+    localStorage.removeItem("auth");
+    LogoutFunc();
+    window.location.replace("/");
+  };
+
+  const navRightFunc = () => {
+    return (
+      <React.Fragment>
+        <div className="sign">
+          <Link to="/sign-up" className="sign__up__btn">
+            Sign Up
+          </Link>
+          <Link to="/sign-in" className="sign__up__btn">
+            Sign In
+          </Link>
+        </div>
+      </React.Fragment>
+    );
+  };
+
   return (
     <>
       <div className="navbar">
@@ -55,12 +80,14 @@ const Navbar = () => {
               </span>
             </Link>
           </div>
-          <Link to="/sign-up" className="sign__up__btn">
-            Sign Up
-          </Link>
-          <Link to="/sign-in" className="sign__up__btn">
-            Sign In
-          </Link>
+          {JSON.parse(localStorage.getItem("auth")) ? "" : navRightFunc()}
+          {localStorage.getItem("auth") ? (
+            <div class="dropdown">
+              <Link to="/sign-up" class="aaa" href="#" onClick={Logout}>
+                Logout
+              </Link>
+            </div>
+          ) : null}
         </div>
       </div>
     </>
