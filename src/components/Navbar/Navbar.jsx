@@ -1,6 +1,9 @@
 import React from "react";
 import "../Navbar/Navbar.css";
+// module
+import { useCart } from "react-use-cart";
 import { Link } from "react-router-dom";
+
 const Navbar = () => {
   React.useEffect(() => {
     window.scrollTo({
@@ -8,6 +11,7 @@ const Navbar = () => {
       behavior: "smooth",
     });
   }, []);
+  const { items } = useCart();
   return (
     <>
       <div className="navbar">
@@ -21,39 +25,35 @@ const Navbar = () => {
         </div>
         <div className="center">
           <ul>
-            <li>
+            <Link className="Ul__li" to="/">
               <a href="/">Home</a>
-            </li>
-            <Link to="/about">
+            </Link>
+            <Link className="Ul__li" to="/about">
               <a href="">About</a>
             </Link>
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">Home</a>
-            </li>
-            <Link to="/admin">
-              <li>
-                <a href="">Admin</a>
-              </li>
+            <Link className="Ul__li">
+              <a href="">Contact</a>
+            </Link>
+            <Link className="Ul__li">
+              <a href="">Settings</a>
             </Link>
           </ul>
         </div>
 
         <div className="right">
-          <Link to="/korzinka">
-            <h4>
-              <img
-                className="icon"
-                src="https://www.ibu.paris/modules/blockreassurance/views/img/img_perso/caddiee.png"
-                alt=""
-              />
-            </h4>
+          <Link to="/korzinka" class="text-reset me-3" href="#">
+            <i style={{ width: "20px" }} class="fas fa-shopping-cart"></i>
+            <span class="bb badge rounded-pill badge-notification bg-danger">
+              {items.length}
+            </span>
           </Link>
           <div className="sign__btns">
-            <button className="sign__up__btn">Sign Up</button>
-            <button className="sign__up__btn">Sign In</button>
+            <Link to="/sign-up" className="sign__up__btn">
+              Sign Up
+            </Link>
+            <Link to="/sign-in" className="sign__up__btn">
+              Sign In
+            </Link>
           </div>
         </div>
       </div>

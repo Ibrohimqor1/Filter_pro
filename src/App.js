@@ -14,6 +14,8 @@ import Magis from "../src/components/Products/Magis/Magis"
 
 import Zapchas from "../src/components/Products/Zapchas/Zapchas"
 import About from "./components/About/about";
+import Sign__in from "./components/Sign_In/Sign__in";
+import Sign__Up from "./components/Sign_Up/Sign__Up";
 function App() {
   return (
     
@@ -21,7 +23,7 @@ function App() {
    
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/doma' element={<Doma />} />
+        <Route path='/dailyFilters' element={<Doma />} />
         <Route path='/kortrij' element={<Kortrij />} />
         <Route path='/promish' element={<Promish />} />
         <Route path='/zapchas' element={<Zapchas />} />
@@ -32,6 +34,8 @@ function App() {
         <Route path='/card/:_id' element={<Inner_side />} />
         <Route path='/korzinka' element={<Korzinka/>}/>
         <Route path='/about' element={About}/>
+        <Route path='/sign-in' element={<Sign__in/>}/>
+        <Route path='/sign-up' element={<Sign__Up/>}/>
       </Routes>
 <Footer/>
     </>

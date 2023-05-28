@@ -17,10 +17,7 @@ const ContextProvider = ({ children }) => {
   const [pass, setPass] = useState("");
   const [number, setNumber] = useState("");
   const [name, setName] = useState("");
-  
 
-
-  
   let logoutClasses = "";
 
   const LogoutFunc = () => {
@@ -28,19 +25,18 @@ const ContextProvider = ({ children }) => {
     if (userAuth) {
       logoutClasses += "btn btn-danger";
       console.log(true);
-    }else{
+    } else {
       console.log(false);
-      logoutClasses = "d-none"
+      logoutClasses = "d-none";
     }
   };
 
-  LogoutFunc()
+  LogoutFunc();
   const userData = {
     name: name,
     number: number,
     login: user,
     pass: pass,
-
   };
 
   useEffect(() => {
@@ -55,21 +51,26 @@ const ContextProvider = ({ children }) => {
   }, []);
 
   const PatchElements = async (_id) => {
-    await axios.patch(`https://ibrohimqor1-filter-api-backend-1.onrender.com/filter/${_id}`, {
-      title: title,
-      image: image,
-      desc: desc,
-      price: price,
-      
-      category: category,
-    });
+    await axios.patch(
+      `https://ibrohimqor1-filter-api-backend-1.onrender.com/filter/${_id}`,
+      {
+        title: title,
+        image: image,
+        desc: desc,
+        price: price,
+
+        category: category,
+      }
+    );
     window.location.reload();
   };
 
   const AdminDelete = async (_id) => {
     try {
       const res = await axios
-        .delete(`https://ibrohimqor1-filter-api-backend-1.onrender.com/filter/${_id}`)
+        .delete(
+          `https://ibrohimqor1-filter-api-backend-1.onrender.com/filter/${_id}`
+        )
         .then(() => window.location.reload());
       console.log("Data deleted");
     } catch (error) {
@@ -84,7 +85,7 @@ const ContextProvider = ({ children }) => {
         image: image,
         desc: desc,
         price: price,
-        
+
         category: category,
       })
       .then((res) => {
@@ -124,13 +125,10 @@ const ContextProvider = ({ children }) => {
         createContext,
         CreateDevice,
         title,
-        
-        user, pass, name, number,
         setData,
         image,
         SetImage,
         price,
-        
         desc,
         SetDesc,
         SetPrice,
@@ -140,9 +138,8 @@ const ContextProvider = ({ children }) => {
         LogoutFunc,
         name,
         setName,
-        number,
-        setNumber,
-        
+        // number,
+        // setNumber
       }}
     >
       {children}
