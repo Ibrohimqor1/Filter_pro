@@ -33,7 +33,7 @@ const Korzinka = () => {
             <b>Total:</b> ${total} som`
         )}&parse_mode=html`
       );
-      window.location.replace("/");
+     
     } else {
       window.location.replace("/sign-up");
     }
