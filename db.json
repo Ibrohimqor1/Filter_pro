@@ -40,6 +40,20 @@
       "login": "salom1@gmail.com",
       "pass": "998999464599",
       "id": 6
+    },
+    {
+      "name": "salom",
+      "number": "",
+      "login": "salom@gmail.com",
+      "pass": "936677559",
+      "id": 7
+    },
+    {
+      "name": "nma",
+      "number": "",
+      "login": "nma@gmail.com",
+      "pass": "936677559",
+      "id": 8
     }
   ]
 }
