@@ -60,7 +60,7 @@ export default function Sign_in() {
             data-aos="fade-up-left"
             required
             className="app__register__input"
-            type="password"
+            type="number"
             placeholder="Номер телефона"
             onChange={(e) => setPass(e.target.value)}
           />

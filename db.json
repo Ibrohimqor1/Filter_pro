@@ -26,6 +26,20 @@
       "login": "ibrohim@gmail.com",
       "pass": "12345",
       "id": 4
+    },
+    {
+      "name": "salom1",
+      "number": "",
+      "login": "salom1",
+      "pass": "998999464599",
+      "id": 5
+    },
+    {
+      "name": "salom1",
+      "number": "",
+      "login": "salom1@gmail.com",
+      "pass": "998999464599",
+      "id": 6
     }
   ]
 }
