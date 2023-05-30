@@ -4,7 +4,7 @@
   height: 80px;
   align-items: center;
   background-color: transparent;
-  background-color: #00c0f0;
+  background-color: #1E90FF;
   margin-bottom: 15px;
   border-top: 1px solid black;
   /* position: fixed;
@@ -80,7 +80,7 @@
   color: white;
   font-weight: 700;
   background: transparent;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 5px;
   transition: 0.5s;
 }
@@ -89,6 +89,25 @@
   color: rgb(53, 53, 53);
   font-weight: 700;
   box-shadow: 0 0 10px 1px rgb(66, 217, 255);
+}
+.sign__up__btn1 {
+  margin-top: -10px;
+width: 100px;
+height: 30px;
+padding-left: 5px;
+padding-top: 5px;
+color: white;
+font-weight: 700;
+background: transparent;
+border: 2px solid white;
+border-radius: 5px;
+transition: 0.5s;
+}
+.sign__up__btn1:hover {
+background-color: white;
+color: rgb(53, 53, 53);
+font-weight: 700;
+box-shadow: 0 0 10px 1px rgb(66, 217, 255);
 }
 .right {
   display: flex;

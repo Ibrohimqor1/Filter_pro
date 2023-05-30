@@ -27,11 +27,11 @@ const Navbar = () => {
     return (
       <React.Fragment>
         <div className="sign">
-          <Link to="/sign-up" className="sign__up__btn">
-            Sign Up
+          <Link to="/sign-up" className="sign__up__btn1">
+          Регистрация
           </Link>
           <Link to="/sign-in" className="sign__up__btn">
-            Sign In
+          Войти
           </Link>
         </div>
       </React.Fragment>
@@ -52,16 +52,16 @@ const Navbar = () => {
         <div className="center">
           <ul>
             <Link className="Ul__li" to="/">
-              <a href="/">Home</a>
+              <a href="/">Главный</a>
             </Link>
             <Link className="Ul__li" to="/about">
-              <a href="">About</a>
+              <a href="">О нас</a>
             </Link>
             <Link className="Ul__li">
-              <a href="">Contact</a>
+              <a href="">Контакт</a>
             </Link>
             <Link className="Ul__li">
-              <a href="">Settings</a>
+              <a href="">Настройки</a>
             </Link>
           </ul>
         </div>
@@ -84,7 +84,7 @@ const Navbar = () => {
           {localStorage.getItem("auth") ? (
             <div class="dropdown">
               <Link to="/sign-up" class="aaa" href="#" onClick={Logout}>
-                Logout
+              Выйти
               </Link>
             </div>
           ) : null}

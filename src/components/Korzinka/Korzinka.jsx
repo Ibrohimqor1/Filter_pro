@@ -1,51 +1,15 @@
-import React from "react";
+import React ,{useContext} from "react";
 import { useCart } from "react-use-cart";
 import axios from "axios";
 import "../Korzinka/Korzinka.scss";
 import Top_Nav from "../topNav/topNav";
 import Navbar from "../Navbar/Navbar";
+import { Context } from "../../Contex";
 
-// import { Context } from "../../Contex";
-// import { clear } from "@testing-library/user-event/dist/clear";
 const Korzinka = () => {
   let total = 0;
-  // const { user, pass, name, number } = useContext(Context);
+  const { user, pass, name, number } = useContext(Context);
   const { items, isEmpty, updateItemQuantity, removeItem } = useCart();
-
-
-
-
-
-
-
-
-  
-  // const postTest = () => {
-  //   axios.post(
-  //   `https://api.telegram.org/bot6141243013:AAHy79TpnOikV3MixBG_L8cfFMvZODHtF9g/sendMessage?chat_id=-906037030&text=${encodeURIComponent(
-  //     `<b>Ma'lumotlar:</b>
-  
-  //     <b>Zakaz Tushti</b> </br>
-  //     <b>Marhamat zakaz haqida malumotlarni ko'rishiz mumkun</b> </br>
-  //     <b> Nomer: +998 99 946 45 99 </b> </br>
-     
-  //     ${items
-  //       // <b> Name: ${userCheck.name} </b>
-  //       // <b> User: ${userCheck.login} </b>
-  //       // <b> Password: ${userCheck.pass} </b>
-  //       .map((item) => {
-  //         return ` <b>${item.title}</b> ${item.count} x ${item.price} som = ${item.count} `;
-  //       })
-  //       .join("")}  
-        
-  //       <b>Total:</b> ${total} som`
-  //   )}&parse_mode=html`
-  //   )
-  // };
-       
-      
-    
-
   const postTest = () => {
     const userCheck = () => JSON.parse(localStorage.getItem("auth"));
     if (userCheck) {
@@ -56,11 +20,11 @@ const Korzinka = () => {
           <b>  Zakaz Tushti</b> 
           <b>Marhamat zakaz haqida malumotlarni ko'rishiz mumkun</b> 
           <b> Nomer: +998 93 6677559 </b> 
-          
+            <b> Name: ${userCheck.name} </b>
+           <b> User: ${userCheck.login} </b>
+           <b> Password: ${userCheck.pass} </b>
           ${items
-          //   <b> Name: ${userCheck.name} </b>
-          // <b> User: ${userCheck.login} </b>
-          // <b> Password: ${userCheck.pass} </b>
+        
             .map((item) => {
               return ` <b>${item.title}</b> ${item.count} x ${item.price} som = ${item.count} штук `;
             })

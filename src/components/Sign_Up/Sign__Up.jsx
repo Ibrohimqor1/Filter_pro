@@ -1,5 +1,5 @@
 import { useState, useContext, useEffect } from "react";
-import "../Sign_Up/Sign_Up.css"
+import "../Sign_Up/Sign_In.css"
 import { GetAPIFunc, PostFunc, DeleteDataFunc } from "./../module/api";
 import { Context } from "../../Contex";
 import Navbar from "../Navbar/Navbar";
@@ -51,14 +51,14 @@ export default function Sign__Up() {
       <div className="app__register">
         <form className="app__register__form" onSubmit={handleSubmit}>
           <h1 data-aos="fade-up" className="app__register__h1">
-            Sign Up
+          Зарегистрироваться
           </h1>
           <input
             data-aos="fade-up-right"
             required
             className="app__register__input"
             type="text"
-            placeholder="Username"
+            placeholder="Имя пользователя"
             onChange={(e) => setName(e.target.value)}
           />
           <input
@@ -66,15 +66,15 @@ export default function Sign__Up() {
             required
             className="app__register__input"
             type="email"
-            placeholder="@gmail.com"
+            placeholder="Ваш @gmail.com"
             onChange={(e) => setUser(e.target.value)}
           />
           <input
             data-aos="fade-up-left"
             required
             className="app__register__input"
-            type="password"
-            placeholder="Password"
+            type="number"
+            placeholder="Номер телефона"
             onChange={(e) => setPass(e.target.value)}
           />
           <button
@@ -82,7 +82,7 @@ export default function Sign__Up() {
             className="app__register__btn"
             onClick={SaveUserData}
           >
-            Submit
+            Нажмите
           </button>
         </form>
       </div>

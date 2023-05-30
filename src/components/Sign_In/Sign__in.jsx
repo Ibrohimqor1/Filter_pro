@@ -46,14 +46,14 @@ export default function Sign_in() {
       <div className="app__register">
         <form className="app__register__form" onSubmit={handleSubmit}>
           <h1 data-aos="fade-up" className="app__register__h1">
-            Sign In
+          Войти
           </h1>
           <input
             data-aos="fade-up-right"
             required
             className="app__register__input"
             type="email"
-            placeholder="@gmail.com"
+            placeholder="Ваш @gmail.com"
             onChange={(e) => setUser(e.target.value)}
           />
           <input
@@ -61,7 +61,7 @@ export default function Sign_in() {
             required
             className="app__register__input"
             type="password"
-            placeholder="Password"
+            placeholder="Номер телефона"
             onChange={(e) => setPass(e.target.value)}
           />
           <button
@@ -69,7 +69,7 @@ export default function Sign_in() {
             className="app__register__btn"
             onClick={CheckUserFunc}
           >
-            Submit
+            Нажмите
           </button>
         </form>
       </div>
