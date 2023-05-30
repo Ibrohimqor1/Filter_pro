@@ -35,7 +35,7 @@ const Korzinka = () => {
       );
       window.location.replace("/");
     } else {
-      window.location.replace("/");
+      window.location.replace("/sign-up");
     }
   };
 
