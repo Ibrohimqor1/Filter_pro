@@ -4,10 +4,16 @@ import Navbar from "../Navbar/Navbar";
 
 const about = () => {
   return (
-    <div>
+    <>
     <Top_Nav/>
 <Navbar/>
-    </div>
+
+<h1>About us</h1>
+
+
+
+
+    </>
   )
 }
 

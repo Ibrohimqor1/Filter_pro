@@ -11,11 +11,11 @@ import Kortrij from "../src/components/Products/Kortrij/Kortrij"
 
 import Footer from "./components/Footer/Footer";
 import Magis from "../src/components/Products/Magis/Magis"
-
 import Zapchas from "../src/components/Products/Zapchas/Zapchas"
 import About from "./components/About/about";
 import Sign__in from "./components/Sign_In/Sign__in";
 import Sign__Up from "./components/Sign_Up/Sign__Up";
+// import about from "../src/components/About/about"
 function App() {
   return (
     
@@ -33,7 +33,7 @@ function App() {
         <Route path='/admin' element={<Admin_pas />} />
         <Route path='/card/:_id' element={<Inner_side />} />
         <Route path='/korzinka' element={<Korzinka/>}/>
-        <Route path='/about' element={About}/>
+        <Route path='/about' element={<About/>}/>
         <Route path='/sign-in' element={<Sign__in/>}/>
         <Route path='/sign-up' element={<Sign__Up/>}/>
       </Routes>
