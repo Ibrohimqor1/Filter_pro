@@ -1,7 +1,7 @@
 .footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background-color: #00C0F0;
+    background-color: rgba(93, 188, 194, 1.00);
     bottom: 0px;
     color: white;
     margin-top: 150px;

@@ -5,15 +5,17 @@ import "../Korzinka/Korzinka.scss";
 import Top_Nav from "../topNav/topNav";
 import Navbar from "../Navbar/Navbar";
 import { Context } from "../../Contex";
+import { useNavigate } from "react-router-dom";
 
 const Korzinka = () => {
+  const navigate = useNavigate()
   let total = 0;
   const { user, pass, name, number } = useContext(Context);
-  const { items, isEmpty, updateItemQuantity, removeItem } = useCart();
+  const { items, isEmpty, updateItemQuantity, removeItem, emptyCart } = useCart();
   const postTest = () => {
     const userCheck = JSON.parse(localStorage.getItem("auth"));
     if (userCheck) {
-      window.location.replace("/");
+      navigate("/")
       axios.post(
         `https://api.telegram.org/bot6141243013:AAHy79TpnOikV3MixBG_L8cfFMvZODHtF9g/sendMessage?chat_id=-906037030&text=${encodeURIComponent(
           `<b>Ma'lumotlar:</b>
@@ -36,7 +38,7 @@ const Korzinka = () => {
         )}&parse_mode=html`
         
       );
-  
+      emptyCart()
     } else {
       window.location.replace("/sign-up");
     }

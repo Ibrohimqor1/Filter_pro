@@ -15,7 +15,7 @@
     height: 19px;
     font-size: 11px;
     font-weight: 800;
-    color: red;
+    color: rgb(7, 7, 7);
     background: white;
     border-radius: 50%;
     border: 2px solid red;
@@ -34,7 +34,12 @@
        z-index: 99;
         bottom: 0;
        width: 100%;
-       background-color: #00C0F0;
+       color: black !important;
+       background-color: rgb(247, 247, 247);
        align-items: center;
+       border-top: 3px solid rgba(93, 188, 194, 1.00);
+    }
+    .Mobile h6{
+        color: black;
     }
 }
