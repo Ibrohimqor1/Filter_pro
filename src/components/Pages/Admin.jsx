@@ -1,8 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Context } from "../../Contex";
 import "../Admin/Admin.scss";
 
 const Admin = () => {
+  const navigate = useNavigate()
   const {
     data,
     PatchElements,
@@ -21,11 +23,21 @@ const Admin = () => {
     category,
     SetCategory,
   } = useContext(Context);
+
+  useEffect(() => {
+  if(!localStorage.getItem("Filter_PRO")) {
+    navigate("/")
+  }
+  }, [])
+
   return (
     <div className="container">
       <div className="ooooo">
         <h1 className="ooooo__h1">ADMIN PANEL</h1>
-
+      <button onClick={() => {
+        localStorage.removeItem("Filter_PRO")
+        window.location.reload()
+    }}>log out</button>
         <div className="registr">
           <input
             value={title}

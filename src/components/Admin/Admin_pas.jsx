@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../Admin/Login.css";
 const Login_admin = () => {
   // password
   const [password, setPassword] = useState("");
+  const tokenFilter = "Filter_PRO"
+  const navigate = useNavigate()
   // password
   return (
     <div>
@@ -29,12 +31,15 @@ const Login_admin = () => {
               />
               {password === "5555" ? (
                 <button className="section6__otadiv__input__btn">
-                  <Link className="ddd" to="/admin1">
+                  <h1 className="ddd" onClick={() => {
+                    navigate("/admin1")
+                    localStorage.setItem("Filter_PRO",tokenFilter)
+                  }} >
                     <i
                       className="ddd fa-solid fa-check"
                      
                     ></i>
-                  </Link>
+                  </h1>
                 </button>
               ) : (
                 <button className="section6__otadiv__input__btn1">
