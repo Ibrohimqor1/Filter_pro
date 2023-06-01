@@ -58,10 +58,10 @@ const Navbar = () => {
               <a href="">О нас</a>
             </Link>
             <Link className="Ul__li">
-              <a href="">Контакт</a>
+              <a href="">  Oптовикам</a>
             </Link>
             <Link className="Ul__li">
-              <a href="">Настройки</a>
+              <a href="">Контакт</a>
             </Link>
           </ul>
         </div>
