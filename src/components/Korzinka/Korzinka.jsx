@@ -30,11 +30,11 @@ const Korzinka = () => {
           ${items
         
             .map((item) => {
-              return ` <b>${item.title}</b> ${item.count} x ${item.price} som = ${item.count} штук `;
+              return ` <b>${item.title}</b> ${item.count} x ${item.price} com = ${item.count} штук `;
             })
             .join("")}  
             
-            <b>Total:</b> ${total} som`
+            <b>Total:</b> ${total} com`
         )}&parse_mode=html`
         
       );
@@ -71,7 +71,7 @@ const Korzinka = () => {
                           <hr />
                           <p className="texts__p">{item.fulldesc}</p>
                      
-                          <p className="texts_price">{item.price} som </p>
+                          <p className="texts_price">{item.price} com </p>
                         </div>
                         <div className="clicks">
                           <div className="btns">
@@ -84,7 +84,7 @@ const Korzinka = () => {
                               +
                             </button>
 
-                            <p className="p">{prCount} som </p>
+                            <p className="p">{prCount} com </p>
                             <button
                               className="btn_plus"
                               onClick={() =>
@@ -118,7 +118,7 @@ const Korzinka = () => {
             />
             <div className="oplata">
               <h1 className="hh1"> Hammasi - </h1>
-              <h1 className="obshi">{total} som </h1>
+              <h1 className="obshi">{total} com </h1>
             </div>
             <div className="oplata">
               <h1 className="hh1"> Yetkazib Berish - </h1>
