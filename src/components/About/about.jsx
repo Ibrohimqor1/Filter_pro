@@ -9,6 +9,7 @@ const about = () => {
 <Navbar/>
 
 <h1>About us</h1>
+<h3>About</h3>
 
 
 
