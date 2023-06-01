@@ -24,7 +24,7 @@
 }
 
 .footer_bottom {
-    background-color: #00C0F0;
+    background-color: rgba(93, 188, 194, 1.00);
     display: flex;
     justify-content: space-evenly;
     height: 60px;
