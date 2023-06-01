@@ -61,6 +61,10 @@ export default function Sign__Up() {
             placeholder="Имя пользователя"
             onChange={(e) => setName(e.target.value)}
           />
+
+
+
+          
           <input
             data-aos="fade-up-right"
             required
