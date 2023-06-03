@@ -3,10 +3,6 @@ import "../Sign_Up/Sign_In.css"
 import { GetAPIFunc, PostFunc, DeleteDataFunc } from "./../module/api";
 import { Context } from "../../Contex";
 import Navbar from "../Navbar/Navbar";
-
-
-
-
 export default function Sign__Up() {
     const {
       user,
@@ -61,10 +57,6 @@ export default function Sign__Up() {
             placeholder="Имя пользователя"
             onChange={(e) => setName(e.target.value)}
           />
-
-
-
-          
           <input
             data-aos="fade-up-right"
             required
