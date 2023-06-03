@@ -1,8 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Context } from "../../Contex";
 import "../Admin/Admin.scss";
 
 const Admin = () => {
+  const navigate = useNavigate()
   const {
     data,
     PatchElements,
@@ -21,11 +23,21 @@ const Admin = () => {
     category,
     SetCategory,
   } = useContext(Context);
+
+  useEffect(() => {
+  if(!localStorage.getItem("Filter_PRO")) {
+    navigate("/")
+  }
+  }, [])
+
   return (
     <div className="container">
       <div className="ooooo">
         <h1 className="ooooo__h1">ADMIN PANEL</h1>
-
+      <button onClick={() => {
+        localStorage.removeItem("Filter_PRO")
+        window.location.reload()
+    }}>log out</button>
         <div className="registr">
           <input
             value={title}
@@ -79,7 +91,7 @@ const Admin = () => {
                   <h1 className="cardPlants__h1">{el.title}</h1>
                   <p className="cardPlants__p">{el.desc}</p>
                   <div className="prices">
-                    <p className="prices__1">{el.price} som </p>
+                    <p className="prices__1">{el.price} com </p>
                     <p className="prices__1"> Kateg : {el.category} </p>
                   </div>
                   <div className="ggg__btns">

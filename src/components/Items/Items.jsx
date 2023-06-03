@@ -38,7 +38,7 @@ const Daily = () => {
                     <div className="ggg">
                       <h1 className="cardPlants__h1">{el.title}</h1>
                       <div className="prices">
-                        <p className="prices__1">{el.price} som </p>
+                        <p className="prices__1">{el.price} com </p>
 
                       </div>
                       <button className="price__btn">О продукте</button>

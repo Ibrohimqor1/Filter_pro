@@ -1,5 +1,6 @@
 import React from 'react'
 import "../Footer/Footer.css"
+import { Link } from 'react-router-dom'
 const Footer = () => {
     return (
         <div className='container'>
@@ -9,30 +10,32 @@ const Footer = () => {
 
                     <div data-aos="flip-up" className="footer_item">
                         <i class="fa-sharp fa-solid fa-phone-volume"></i>
-
-                        <h4>+7 951 159 1979</h4>
+<Link to="tel:+996555993090">
+<h4>+996555993090</h4>
+</Link>
+                        
                     </div>
                     <div data-aos="flip-up" className="footer_item">
                         <i class="fa-sharp fa-solid fa-phone-volume"></i>
 
-                        <h4>+7 951 159 1979</h4>
+                        <h4>+996776971540</h4>
                     </div>
                     <div data-aos="flip-up" className="footer_item">
                         <i class="fa-sharp fa-solid fa-phone-volume"></i>
 
-                        <h4>+7 951 159 1979</h4>
+                        <h4>+996555993090</h4>
                     </div>
 
                     <div data-aos="flip-up" className="footer_item">
                         <i class="fa-regular fa-envelope"></i>
 
-                        <h4>+7 951 159 1979</h4>
+                        <h4> Араван</h4>
                     </div>
 
                     <div data-aos="flip-up" className="footer_item">
                         <i class="fa-solid fa-circle-xmark"></i>
 
-                        <h4>+7 951 159 1979</h4>
+                        <h4> Б.Айдаров 94</h4>
                     </div>
                 </div>
 
@@ -41,18 +44,24 @@ const Footer = () => {
                     </h2>
                     <div className="footer_item">
                         <i class="fa-regular fa-circle"></i>
-
-                        <h4>Home</h4>
+<Link to="/">
+<h4>Home</h4>
+</Link>
+                        
                     </div>
                     <div data-aos="flip-up" className="footer_item">
                         <i class="fa-regular fa-circle"></i>
-
-                        <h4>About</h4>
+<Link to="/about">
+<h4>About</h4>
+</Link>
+                       
                     </div>
                     <div data-aos="flip-up" className="footer_item">
                         <i class="fa-regular fa-circle"></i>
-
-                        <h4>All Products</h4>
+<Link to="all">
+<h4>All Products</h4>
+</Link>
+                        
                     </div>
 
                     <div data-aos="flip-up" className="footer_item">
@@ -66,66 +75,34 @@ const Footer = () => {
 
 
                 <div data-aos="flip-up" className="footer_items">
-                    <h2>Каталог товаров</h2>
+                    <h2>Websites</h2>
                     <div className="footer_item">
                         <i class="fa-regular fa-circle-check"></i>
 
-                        <h4>+7 951 159 1979</h4>
+                        <h4>Instagram</h4>
                     </div>
                     <div data-aos="flip-up" className="footer_item">
                         <i class="fa-regular fa-circle-check"></i>
 
-                        <h4>+7 951 159 1979</h4>
+                        <h4>Telegram</h4>
                     </div>
                     <div data-aos="flip-up" className="footer_item">
                         <i class="fa-regular fa-circle-check"></i>
 
-                        <h4>+7 951 159 1979</h4>
+                        <h4>Twitter</h4>
                     </div>
 
                     <div data-aos="flip-up" className="footer_item">
                         <i class="fa-regular fa-circle-check"></i>
 
-                        <h4>+7 951 159 1979</h4>
+                        <h4>TikTok</h4>
                     </div>
 
-                    <div data-aos="flip-up" className="footer_item">
-                        <i class="fa-regular fa-circle-check"></i>
-                        <h4>+7 951 159 1979</h4>
-                    </div>
+                   
                 </div>
 
 
-                <div data-aos="flip-up" className="footer_items">
-                    <h2>Подписка</h2>
-                    <div data-aos="flip-up"  className="footer_item">
-                        <i class="fa-sharp fa-solid fa-phone-volume"></i>
-
-                        <h4>+7 951 159 1979</h4>
-                    </div>
-                    <div data-aos="flip-up" className="footer_item">
-                        <i class="fa-sharp fa-solid fa-phone-volume"></i>
-
-                        <h4>+7 951 159 1979</h4>
-                    </div>
-                    <div data-aos="flip-up" className="footer_item">
-                        <i class="fa-sharp fa-solid fa-phone-volume"></i>
-
-                        <h4>+7 951 159 1979</h4>
-                    </div>
-
-                    <div data-aos="flip-up" className="footer_item">
-                        <i class="fa-regular fa-envelope"></i>
-
-                        <h4>+7 951 159 1979</h4>
-                    </div>
-
-                    <div data-aos="flip-up" className="footer_item">
-                        <i class="fa-solid fa-circle-xmark"></i>
-
-                        <h4>+7 951 159 1979</h4>
-                    </div>
-                </div>
+                
 
             </div>
             <hr />

@@ -1,29 +1,27 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 
-import { Context } from "../../../Contex";
-import Top_Nav from "../../topNav/topNav";
-import Navbar from "../../Navbar/Navbar";
+import { Context } from "../../Contex";
 
-import "../Doma/Doma.scss";
+
+import "../Products/Doma/Doma.scss";
 
 const Charger_Pages = () => {
  
-
+  
   const { data } = useContext(Context);
 
-  const newarray25 = data.filter((el) => el.category === "zapchas");
+  const newarray25 = data.filter((el) => el.category === "popular");
   return (
     <>
-    <Top_Nav/>
-<Navbar/>
-    
+   
+  
     <div className="container1">
-         <h1>Полупромышленный фильтр</h1>
+         <h1>Популярные товары</h1>
       <div className="maped">
      
         {newarray25.map((el) => {
-          console.log(el._id);
+          // console.log(el._id);
           return (
             
             <Link to={`/card/${el._id}`}>

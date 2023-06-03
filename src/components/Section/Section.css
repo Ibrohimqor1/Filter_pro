@@ -1,5 +1,6 @@
 .section{
-    background: rgb(233, 234, 240) url(https://cdn.pixabay.com/photo/2016/04/15/04/02/water-1330252_960_720.jpg);
+    
+  
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
@@ -7,7 +8,8 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-   height: 650px;
+   height: 500px;
+   background-color:rgba(93, 188, 194, 1.00);
 }
 
 .section_right{

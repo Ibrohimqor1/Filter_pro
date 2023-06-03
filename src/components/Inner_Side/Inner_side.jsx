@@ -32,7 +32,7 @@ const Daily_Cards = () => {
              <div className="texts_card">
              <p className="cardPlants_card__p">{paramsFind?.desc}</p>
               <div className="prices_card">
-                <p className="prices_card__1">{paramsFind?.price} som </p>
+                <p className="prices_card__1">{paramsFind?.price} com </p>
                 {/* <p className="prices_card__2">{paramsFind?.price} $</p> */}
               </div>
               {!getItem(paramsFind._id) ? (
