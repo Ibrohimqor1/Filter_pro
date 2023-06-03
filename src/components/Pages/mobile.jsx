@@ -28,7 +28,7 @@ const Mobile = () => {
             <h6>About</h6>
           </div>
         </Link>
-        <Link>
+        <Link to="/contact">
           <div className="mobile_item">
             <img
               className="mobile_home"

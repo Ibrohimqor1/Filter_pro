@@ -60,7 +60,7 @@ const Navbar = () => {
             <Link className="Ul__li">
               <a href="">  Oптовикам</a>
             </Link>
-            <Link className="Ul__li">
+            <Link to="/contact" className="Ul__li">
               <a href="">Контакт</a>
             </Link>
           </ul>

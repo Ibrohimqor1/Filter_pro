@@ -11,7 +11,7 @@ const Login_admin = () => {
 
 
     <div>
-
+      
       <section className="admin__sect">
         <div className="container">
           <div className="register">
@@ -23,7 +23,14 @@ const Login_admin = () => {
                 drop your password below
               </p>
             </div>
-            <br /> <div className="section6__otadiv__input"> <input className="section6__otadiv__input1" type="text" placeholder="Enter your password" value={password} onChange={(e) => setPassword(e.target.value)}
+            <br />
+            <div className="section6__otadiv__input">
+              <input
+                className="section6__otadiv__input1"
+                type="text"
+                placeholder="Enter your password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
               {password === "5555" ? (
                 <button className="section6__otadiv__input__btn">

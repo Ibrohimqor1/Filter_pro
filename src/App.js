@@ -16,6 +16,7 @@ import About from "./components/About/about";
 import Sign__in from "./components/Sign_In/Sign__in";
 import Sign__Up from "./components/Sign_Up/Sign__Up";
 import Popular from "../src/components/popular/popular"
+import Contact from "../src/components/Contact/Contact"
 // import about from "../src/components/About/about"
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path='/sign-in' element={<Sign__in/>}/>
         <Route path='/sign-up' element={<Sign__Up/>}/>
         <Route path='/popular' element={<Popular/>}/>
+        <Route path='/contact' element={<Contact/>}/>
       </Routes>
 <Footer/>
     </>
