@@ -1,6 +1,7 @@
 import { Context } from "../../Contex";
 import React, { useContext } from "react";
 import "../Navbar/Navbar.css";
+import Logo from '../../components/Images/logo.png'
 // module
 import { useCart } from "react-use-cart";
 import { Link } from "react-router-dom";
@@ -44,7 +45,8 @@ const Navbar = () => {
         <div className="left">
           <Link to="/">
             <img
-              src="https://homefilter.kz/assets/images/common/logo_black.svg"
+            className="logo"
+              src={Logo}
               alt=""
             />
           </Link>
