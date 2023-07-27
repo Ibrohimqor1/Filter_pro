@@ -1,17 +1,12 @@
-import React from 'react'
-import "./topNav.css"
+import React from "react";
+import "./topNav.css";
 
 const Top_Nav = () => {
-    return (
-        <>
-            <div className="top_navbar">
-                <h4>Здравствуйте,
-                    войдите в личный кабинет</h4>
+  return (
+    <div className="top">
 
-                    <h5>Обратная связь</h5>
-            </div>
-        </>
-    )
-}
+    </div>
+  );
+};
 
-export default Top_Nav
+export default Top_Nav;
