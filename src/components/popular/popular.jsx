@@ -2,20 +2,13 @@ import React, { useContext } from "react";
 import { Link} from "react-router-dom";
 
 import { Context } from "../../Contex";
-
-
 import "../Products/Doma/Doma.scss";
 
-const Charger_Pages = () => {
- 
-  
+const Charger_Pages = () => { 
   const { data } = useContext(Context);
-
   const newarray25 = data.filter((el) => el.category === "popular");
   return (
     <>
-   
-  
     <div className="container1">
          <h1>Популярные товары</h1>
       <div className="maped">
