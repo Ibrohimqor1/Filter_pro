@@ -26,7 +26,7 @@ const Charger_Pages = () => {
                   
                   <div className="prices">
                     <p className="prices__1">{el.price} com </p>
-                    
+=
                   </div>
                   <button className="price__btn">О продукте</button>
                 </div>
