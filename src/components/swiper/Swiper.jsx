@@ -8,7 +8,6 @@ const Swiper = () => {
         <div className="swiper" >
             <div className="components" data-aos="fade-down">
              <h1>Categories</h1>
-             <h3>All Products</h3>
              <div className="container" >
              <div className="categ">
                 <img src="https://delux.kg/wp-content/uploads/2020/07/oc22.png" alt="" />

@@ -6,7 +6,7 @@
   background-color: transparent;
   background-color: #8FB8CA;
   margin-bottom: 15px;
-  border-top: 1px solid black;
+  border-top: 1px solid rgb(52, 52, 52);
   /* position: fixed;
     width: 100%;
     z-index: 99; */
@@ -14,6 +14,7 @@
 .sign{
   margin-top: -5px;
 }
+
 .dropdown {
   margin-left: 20px;
   margin-top: -10px;
@@ -67,8 +68,12 @@
   transition: 0.2s;
 }
 .Ul__li a:hover {
-  color: black;
+  width: 200px;
+  height: 30px;
+  background-color: #fff;
+  color: #2370b4;
 }
+
 .sign__btns {
   display: flex;
   gap: 15px;
@@ -89,7 +94,7 @@
 }
 .sign__up__btn:hover {
   background-color: white;
-  color: rgb(53, 53, 53);
+  color: #2370b4;
   font-weight: 700;
   box-shadow: 0 0 10px 1px rgb(66, 217, 255);
 }
@@ -108,7 +113,7 @@
 }
 .sign__up__btn1:hover {
   background-color: white;
-  color: rgb(53, 53, 53);
+  color: #2370b4;
   font-weight: 700;
   box-shadow: 0 0 10px 1px rgb(66, 217, 255);
 }
@@ -129,7 +134,9 @@
 .navbar .left img {
   width: 150px;
 }
-
+.sign__btns__kor{
+  margin-top: -8px;
+}
 .icon {
   width: 20px;
   padding-top: 4px;
