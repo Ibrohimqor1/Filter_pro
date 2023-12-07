@@ -62,15 +62,13 @@
   background: white;
   color: red;
 }
+
 .Ul__li a {
   color: white;
   font-weight: 700;
   transition: 0.2s;
 }
 .Ul__li a:hover {
-  width: 200px;
-  height: 30px;
-  background-color: #fff;
   color: #2370b4;
 }
 
@@ -96,13 +94,13 @@
   background-color: white;
   color: #2370b4;
   font-weight: 700;
-  box-shadow: 0 0 10px 1px rgb(66, 217, 255);
+  box-shadow: 0 0 10px 1px #2370b4;
 }
 .sign__up__btn1 {
   margin-top: -10px;
-  width: 100px;
+  width: 90px;
+  text-align: center;
   height: 30px;
-  padding-left: 5px;
   padding-top: 5px;
   color: white;
   font-weight: 700;
@@ -115,7 +113,7 @@
   background-color: white;
   color: #2370b4;
   font-weight: 700;
-  box-shadow: 0 0 10px 1px rgb(66, 217, 255);
+  box-shadow: 0 0 10px 1px #2370b4;
 }
 .right {
   display: flex;

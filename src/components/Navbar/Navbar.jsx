@@ -29,10 +29,10 @@ const Navbar = () => {
       <React.Fragment>
         <div className="sign">
           <Link to="/sign-up" className="sign__up__btn1">
-          Регистрация
+          Sign In
           </Link>
           <Link to="/sign-in" className="sign__up__btn">
-          Войти
+          Sign Up
           </Link>
         </div>
       </React.Fragment>
@@ -54,16 +54,16 @@ const Navbar = () => {
         <div className="center">
           <ul>
             <Link className="Ul__li" to="/">
-              <a href="/">Главный</a>
+              <a href="/">Home</a>
             </Link>
             <Link className="Ul__li" to="/about">
-              <a href="">О нас</a>
+              <a href="">About</a>
             </Link>
             <Link className="Ul__li">
-              <a href="">  Oптовикам</a>
+              <a href="">Wholesalers</a>
             </Link>
             <Link to="/contact" className="Ul__li">
-              <a href="">Контакт</a>
+              <a href="">Contact</a>
             </Link>
           </ul>
         </div>
