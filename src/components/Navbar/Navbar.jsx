@@ -46,7 +46,7 @@ const Navbar = () => {
           <Link to="/">
             <img
             className="logo"
-              src={Logo}
+              src="https://www.cdnlogo.com/logos/b/24/barbershop2.svg"
               alt=""
             />
           </Link>
