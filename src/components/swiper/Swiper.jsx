@@ -10,19 +10,19 @@ const Swiper = () => {
              <h1>Categories</h1>
              <div className="container" >
              <div className="categ">
-                <img src="https://delux.kg/wp-content/uploads/2020/07/oc22.png" alt="" />
+                <img src="https://freesvg.org/img/barber-pole.png" alt="" />
                 <Link to="/dailyFilters"><h3>Фильтры для Фильтры для дома </h3>
                 </Link>
                 
              </div>
              <div className="categ">
-                <img src="https://delux.kg/wp-content/uploads/2020/07/zratttttt.png" alt="" />
+                <img src="https://freesvg.org/img/barber-pole.png" alt="" />
                 <Link to="/promish"> <h3>Полупромышленный фильтр</h3>
                 </Link>
                
              </div>
              <div className="categ">
-                <img src="https://delux.kg/wp-content/uploads/2020/07/zrat2-1.png" alt="" />
+                <img src="https://freesvg.org/img/barber-pole.png" alt="" />
                 <Link to="/kortrij">
                 <h3>Картриджи для фильтров</h3>
                 </Link>
@@ -30,14 +30,14 @@ const Swiper = () => {
              </div>
 
              <div className="categ">
-                <img src="https://delux.kg/wp-content/uploads/2020/07/zrat.png" alt="" />
+                <img src="https://freesvg.org/img/barber-pole.png" alt="" />
                 <Link to="/magis">
                 <h3>Магистральные фильтры </h3>
                 </Link>
                
              </div>
              <div className="categ">
-                <img src="https://delux.kg/wp-content/uploads/2020/07/zrart3.png" alt="" />
+                <img src="https://freesvg.org/img/barber-pole.png" alt="" />
                 <Link to="/zapchas">
                 <h3>Запасные части </h3>
                 </Link>
@@ -45,7 +45,7 @@ const Swiper = () => {
              </div>
              <Link to="all">
              <div className="categ">
-                <img src="https://delux.kg/wp-content/uploads/2020/07/zrart3.png" alt="" />
+                <img src="https://freesvg.org/img/barber-pole.png" alt="" />
                 <h3>All Products </h3>
              </div>
              </Link>

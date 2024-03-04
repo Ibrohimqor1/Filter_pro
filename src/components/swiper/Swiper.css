@@ -1,58 +1,61 @@
-.swiper{
-    display: flex;
-    justify-content: space-evenly;
+.swiper {
+    margin-top: -15px;
+  display: flex;
+  background: black;
+  justify-content: space-evenly;
 }
-.components{
-   
+.components {
   text-align: center;
- border: 1px solid black;
- border-radius: 25px;
-background: #2370b4;
-color: white;
-margin: 15px;
+  border: 1px solid black;
+  /* border-radius: 25px; */
+  background-image: url("https://e1.pxfuel.com/desktop-wallpaper/37/368/desktop-wallpaper-a-barber-grooming-a-man-s-beard-%C2%B7-stock-barber.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: grayscale(100%) brightness(60%);
+  color: white;
+  margin: 15px;
 }
-body{
-    background-color: rgb(255, 255, 255);
-}  
-
-.swiper2{
-    width: 70%;
-  
-}
-.categ img{
-    margin-right: 25px;
+body {
+  background-color: rgb(255, 255, 255);
 }
 
-.categ{
-    display: flex;
-   
-    align-items: center;
-   border-bottom: 1px solid black;
-   margin: 10px;
-   padding: 5px;
+.swiper2 {
+  width: 60%;
+}
+.categ img {
+  margin-right: 15px;
 }
 
-.categ img{
-    width: 30px;
+.categ {
+  display: flex;
+
+  align-items: center;
+  /* border-bottom: 1px solid black; */
+  margin: 10px;
+  padding: 5px;
 }
-.container{
+
+.categ img {
+  width: 40px;
+  height: 60px;
+}
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .swiper2 {
     width: 100%;
+  }
+  .swiper {
+    display: flex;
+    flex-direction: column;
     margin: auto;
-}
-
-@media only screen and (max-width:800px){
-    .swiper2{
-        width: 100%;
-    }
-    .swiper{
-        display: flex;
-      flex-direction: column;
-      margin: auto;
-    }
-    .container{
-        width: 80%;
-        margin: auto;
-    }
-
-    
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+  }
 }

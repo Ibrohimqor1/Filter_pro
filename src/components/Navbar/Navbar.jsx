@@ -45,8 +45,8 @@ const Navbar = () => {
         <div className="left">
           <Link to="/">
             <img
-            className="logo"
-              src="https://www.cdnlogo.com/logos/b/24/barbershop2.svg"
+            className="logo_"
+              src="https://www.barbersociety.ro/wp-content/uploads/2018/01/Logo-BBS-Alb.png"
               alt=""
             />
           </Link>
@@ -54,13 +54,10 @@ const Navbar = () => {
         <div className="center">
           <ul>
             <Link className="Ul__li" to="/">
-              <a href="/">Home</a>
+              <a href="/">About Us</a>
             </Link>
             <Link className="Ul__li" to="/about">
-              <a href="">About</a>
-            </Link>
-            <Link className="Ul__li">
-              <a href="">Wholesalers</a>
+              <a href="">Services</a>
             </Link>
             <Link to="/contact" className="Ul__li">
               <a href="">Contact</a>
@@ -68,20 +65,8 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="sign__btns">
-          <div className="sign__btns__kor">
-            <Link
-              className="srtdb"
-              to="/korzinka"
-              class="text-reset me-3"
-              href="#"
-            >
-              <i style={{ width: "20px" }} class="fas fa-shopping-cart"></i>
-              <span class="bb badge rounded-pill badge-notification bg-danger">
-                {items.length}
-              </span>
-            </Link>
-          </div>
+         <div className="sign__btns">
+
           {JSON.parse(localStorage.getItem("auth")) ? "" : navRightFunc()}
           {localStorage.getItem("auth") ? (
             <div class="dropdown">
